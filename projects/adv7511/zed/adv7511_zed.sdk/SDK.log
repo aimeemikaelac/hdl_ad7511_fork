@@ -1,0 +1,852 @@
+05:05:46 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+05:08:28 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin
+05:08:28 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/2014.2_hdmi/fsbl.bif
+05:08:30 INFO  : Bootgen command execution is done.
+02:44:32 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+02:44:32 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+02:44:32 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431591758000,  Project:1431515092000
+02:44:32 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+02:44:32 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+02:44:44 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:44:51 INFO  : 
+02:44:54 INFO  : Updating hardware inferred compiler options for fsbl.
+02:44:54 INFO  : Clearing existing target manager status.
+02:44:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+02:44:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+02:44:56 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+02:44:58 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:57:05 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+02:57:07 INFO  : Bootgen command execution is done.
+03:13:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+05:44:27 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+05:44:27 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+05:44:27 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431600837000,  Project:1431591758000
+05:44:27 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+05:44:27 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+05:44:41 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+05:44:48 INFO  : 
+05:44:51 INFO  : Updating hardware inferred compiler options for fsbl.
+05:44:51 INFO  : Clearing existing target manager status.
+05:44:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+05:44:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+05:44:53 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+05:44:55 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+05:45:47 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+05:45:48 INFO  : Bootgen command execution is done.
+05:45:51 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+15:31:47 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+15:31:47 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+15:31:47 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431639019000,  Project:1431600837000
+15:31:47 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+15:31:47 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+15:32:00 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+15:32:07 INFO  : 
+15:32:09 INFO  : Updating hardware inferred compiler options for fsbl.
+15:32:09 INFO  : Clearing existing target manager status.
+15:32:13 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+15:32:13 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+15:32:13 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+15:32:15 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+15:38:16 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+15:38:16 INFO  : Bootgen command execution is done.
+16:25:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+16:37:49 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:37:49 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+16:37:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431643009000,  Project:1431639019000
+16:37:49 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:37:49 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+16:37:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+16:37:58 INFO  : 
+16:37:59 INFO  : Updating hardware inferred compiler options for fsbl.
+16:37:59 INFO  : Clearing existing target manager status.
+16:38:01 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+16:38:01 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+16:38:01 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+16:38:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+16:39:55 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+16:39:56 INFO  : Bootgen command execution is done.
+17:14:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431645202000,  Project:1431643009000
+17:14:37 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:14:43 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+17:14:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:14:58 INFO  : 
+17:14:59 INFO  : Updating hardware inferred compiler options for fsbl.
+17:14:59 INFO  : Clearing existing target manager status.
+17:14:59 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+17:14:59 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+17:14:59 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+17:15:00 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:18:01 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+17:18:01 INFO  : Bootgen command execution is done.
+17:36:59 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431646589000,  Project:1431645202000
+17:37:00 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+17:37:01 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+17:37:09 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:37:17 INFO  : 
+17:37:18 INFO  : Updating hardware inferred compiler options for fsbl.
+17:37:18 INFO  : Clearing existing target manager status.
+17:37:18 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+17:37:18 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+17:37:18 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+17:37:19 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:37:57 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+17:37:58 INFO  : Bootgen command execution is done.
+17:59:59 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431647974000,  Project:1431646589000
+17:59:59 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:00:01 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:00:11 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:00:19 INFO  : 
+18:00:20 INFO  : Updating hardware inferred compiler options for fsbl.
+18:00:20 INFO  : Clearing existing target manager status.
+18:00:20 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+18:00:20 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+18:00:20 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+18:00:20 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:06:38 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+18:06:38 INFO  : Bootgen command execution is done.
+18:44:46 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431649731000,  Project:1431647974000
+18:44:46 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:44:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:44:56 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:45:04 INFO  : 
+18:45:05 INFO  : Updating hardware inferred compiler options for fsbl.
+18:45:05 INFO  : Clearing existing target manager status.
+18:45:05 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+18:45:05 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+18:45:05 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+18:45:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:46:12 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+18:46:13 INFO  : Bootgen command execution is done.
+18:47:33 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin
+18:47:34 INFO  : Bootgen command execution is done.
+18:47:52 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:48:09 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:48:09 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:48:32 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+18:48:33 INFO  : Bootgen command execution is done.
+19:20:29 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431652806000,  Project:1431649731000
+19:20:29 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+19:20:32 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:20:41 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:20:49 INFO  : 
+19:20:50 INFO  : Updating hardware inferred compiler options for fsbl.
+19:20:51 INFO  : Clearing existing target manager status.
+19:20:52 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+19:20:52 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+19:20:52 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+19:20:52 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:13:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431654775000,  Project:1431652806000
+22:13:22 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+22:13:24 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+22:13:32 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:13:40 INFO  : 
+22:13:41 INFO  : Updating hardware inferred compiler options for fsbl.
+22:13:41 INFO  : Clearing existing target manager status.
+22:13:41 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+22:13:41 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+22:13:42 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+22:13:42 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:14:36 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+22:14:36 INFO  : Bootgen command execution is done.
+23:00:47 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431666021000,  Project:1431654775000
+23:00:47 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:00:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:00:56 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:01:04 INFO  : 
+23:01:05 INFO  : Updating hardware inferred compiler options for fsbl.
+23:01:05 INFO  : Clearing existing target manager status.
+23:01:05 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:01:05 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:01:05 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:01:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:01:46 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+23:01:46 INFO  : Bootgen command execution is done.
+23:19:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431667091000,  Project:1431666021000
+23:19:43 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+23:19:45 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:19:53 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:20:01 INFO  : 
+23:20:02 INFO  : Updating hardware inferred compiler options for fsbl.
+23:20:02 INFO  : Clearing existing target manager status.
+23:20:02 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:20:02 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:20:02 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:20:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:23:30 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+23:23:30 INFO  : Bootgen command execution is done.
+00:57:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431671068000,  Project:1431667091000
+00:57:52 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:57:54 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+00:58:05 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:58:13 INFO  : 
+00:58:14 INFO  : Updating hardware inferred compiler options for fsbl.
+00:58:14 INFO  : Clearing existing target manager status.
+00:58:14 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+00:58:14 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+00:58:14 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+00:58:17 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:59:49 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+00:59:50 INFO  : Bootgen command execution is done.
+01:47:26 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431675949000,  Project:1431671068000
+01:47:29 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:47:32 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+01:47:39 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:47:47 INFO  : 
+01:47:48 INFO  : Updating hardware inferred compiler options for fsbl.
+01:47:48 INFO  : Clearing existing target manager status.
+01:47:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+01:47:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+01:47:48 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+01:47:49 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:48:20 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+01:48:21 INFO  : Bootgen command execution is done.
+02:38:30 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431679075000,  Project:1431675949000
+02:38:34 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+02:38:36 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+02:38:46 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:38:54 INFO  : 
+02:38:56 INFO  : Updating hardware inferred compiler options for fsbl.
+02:38:56 INFO  : Clearing existing target manager status.
+02:38:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+02:38:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+02:38:56 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+02:38:58 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:40:27 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+02:40:27 INFO  : Bootgen command execution is done.
+03:11:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+21:09:11 INFO  : Invoking Bootgen: bootgen -image fsbl_qam.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT_qam.bin
+21:09:13 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/2014.2_hdmi/fsbl_qam.bif
+21:09:13 INFO  : Bootgen command execution is done.
+21:11:27 INFO  : Invoking Bootgen: bootgen -image fsbl_aes.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT_aes.bin
+21:11:27 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/2014.2_hdmi/fsbl_aes.bif
+21:11:27 INFO  : Bootgen command execution is done.
+23:33:32 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:33:32 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+23:33:32 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431754290000,  Project:1431679075000
+23:33:32 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:33:32 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:33:44 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:33:51 INFO  : 
+23:33:54 INFO  : Updating hardware inferred compiler options for fsbl.
+23:33:54 INFO  : Clearing existing target manager status.
+23:33:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:33:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:33:56 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:33:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:34:36 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+23:34:36 INFO  : Bootgen command execution is done.
+00:26:52 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1431757546000,  Project:1431754290000
+00:26:54 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+00:26:59 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+00:27:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:27:17 INFO  : 
+00:27:19 INFO  : Updating hardware inferred compiler options for fsbl.
+00:27:19 INFO  : Clearing existing target manager status.
+00:27:19 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+00:27:19 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+00:27:19 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+00:27:20 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:27:55 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+00:27:56 INFO  : Bootgen command execution is done.
+01:03:07 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:03:28 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:03:29 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+01:05:14 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT.bin -w on
+01:05:15 INFO  : Bootgen command execution is done.
+04:33:16 INFO  : Invoking Bootgen: bootgen -image fsbl_aes.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT_aes.bin -w on
+04:33:16 INFO  : Overwriting existing bif file /Xilinx/xilinx_bootfiles/2014.2_hdmi/fsbl_aes.bif
+04:33:17 INFO  : Bootgen command execution is done.
+04:34:08 INFO  : Invoking Bootgen: bootgen -image fsbl_qam.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT_qam.bin -w on
+04:34:08 INFO  : Overwriting existing bif file /Xilinx/xilinx_bootfiles/2014.2_hdmi/fsbl_qam.bif
+04:34:09 INFO  : Bootgen command execution is done.
+05:20:02 INFO  : Invoking Bootgen: bootgen -image fsbl_qam.bif -o i /Xilinx/xilinx_bootfiles/2014.2_hdmi/BOOT_qam.bin -w on
+05:20:02 INFO  : Bootgen command execution is done.
+17:52:36 INFO  : Invoking Bootgen: bootgen -image fsbl_qam.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/BOOT_qam.bin
+17:52:36 INFO  : Overwriting existing bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/fsbl_qam.bif
+17:52:37 INFO  : Bootgen command execution is done.
+17:53:13 INFO  : Invoking Bootgen: bootgen -image fsbl_aes.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/BOOT_aes.bin
+17:53:13 INFO  : Overwriting existing bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/fsbl_aes.bif
+17:53:14 INFO  : Bootgen command execution is done.
+18:02:43 INFO  : Invoking Bootgen: bootgen -image aes_full.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/aes_full.bin
+18:02:43 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/aes_full.bif
+18:02:44 INFO  : Bootgen command execution is done.
+18:03:49 INFO  : Invoking Bootgen: bootgen -image aes_partial.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/aes_partial.bin
+18:03:49 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/aes_partial.bif
+18:03:49 INFO  : Bootgen command execution is done.
+18:05:15 INFO  : Invoking Bootgen: bootgen -image qam_full.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/qam_full.bin
+18:05:15 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/qam_full.bif
+18:05:16 INFO  : Bootgen command execution is done.
+18:06:21 INFO  : Invoking Bootgen: bootgen -image qam_partial.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/qam_partial.bin
+18:06:21 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/qam_partial.bif
+18:06:21 INFO  : Bootgen command execution is done.
+16:51:08 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+16:51:08 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+16:56:02 INFO  : Invoking Bootgen: bootgen -image qam_full_android5.bif -o i /Xilinx/xilinx_bootfiles/AES_QAM_pr/BOOT_qam_android5.bin
+16:56:02 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/AES_QAM_pr/qam_full_android5.bif
+16:56:04 INFO  : Bootgen command execution is done.
+18:32:03 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:32:04 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:32:04 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441671760000,  Project:1431757546000
+18:32:04 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:32:04 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:32:06 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:32:18 INFO  : 
+18:32:20 INFO  : Updating hardware inferred compiler options for fsbl.
+18:32:20 INFO  : Clearing existing target manager status.
+18:32:24 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+18:32:24 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+18:32:24 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+18:32:24 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:48:07 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin
+18:48:07 INFO  : Creating new bif file /Xilinx/xilinx_bootfiles/AES_CTR_QAM/aes_ctr_full_static.bif
+18:48:09 INFO  : Bootgen command execution is done.
+18:56:21 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:43:10 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:43:10 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:43:10 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441675974000,  Project:1441671760000
+19:43:10 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:43:11 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:43:19 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:43:26 INFO  : 
+19:43:28 INFO  : Updating hardware inferred compiler options for fsbl.
+19:43:28 INFO  : Clearing existing target manager status.
+19:43:29 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+19:43:29 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+19:43:29 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+19:43:30 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:45:01 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT.bin
+19:45:02 INFO  : Bootgen command execution is done.
+19:49:35 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+19:49:36 INFO  : Bootgen command execution is done.
+19:49:50 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:52:28 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:52:28 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:52:28 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441677083000,  Project:1441675974000
+19:52:28 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:52:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:52:30 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:52:38 INFO  : 
+19:52:39 INFO  : Updating hardware inferred compiler options for fsbl.
+19:52:39 INFO  : Clearing existing target manager status.
+19:52:40 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+19:52:40 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+19:52:40 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+19:52:41 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:55:02 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+19:55:02 INFO  : Overwriting existing bif file /Xilinx/xilinx_bootfiles/AES_CTR_QAM/aes_ctr_full_static.bif
+19:55:02 INFO  : Bootgen command execution is done.
+21:22:16 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:57:02 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:57:02 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+23:57:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441686784000,  Project:1441677083000
+23:57:02 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:57:02 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:57:12 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:57:19 INFO  : 
+23:57:20 INFO  : Updating hardware inferred compiler options for fsbl.
+23:57:20 INFO  : Clearing existing target manager status.
+23:57:22 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:57:22 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:57:22 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:57:23 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:59:04 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:59:05 INFO  : Bootgen command execution is done.
+00:10:17 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:46:31 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:46:32 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+22:46:32 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441773261000,  Project:1441686784000
+22:46:32 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:46:32 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+22:46:34 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:46:46 INFO  : 
+22:46:48 INFO  : Updating hardware inferred compiler options for fsbl.
+22:46:48 INFO  : Clearing existing target manager status.
+22:46:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+22:46:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+22:46:53 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+22:46:53 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:48:41 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+22:48:41 INFO  : Bootgen command execution is done.
+00:44:00 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:44:35 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:44:36 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+00:44:36 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441777411000,  Project:1441773261000
+00:44:36 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:44:36 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+00:44:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:44:50 INFO  : 
+00:44:52 INFO  : Updating hardware inferred compiler options for fsbl.
+00:44:52 INFO  : Clearing existing target manager status.
+00:44:55 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+00:44:55 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+00:44:55 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+00:44:56 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:45:29 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+00:45:30 INFO  : Bootgen command execution is done.
+00:51:42 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:52:55 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:52:55 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+01:52:55 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441784260000,  Project:1441777411000
+01:52:55 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:52:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+01:53:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:53:12 INFO  : 
+01:53:14 INFO  : Updating hardware inferred compiler options for fsbl.
+01:53:14 INFO  : Clearing existing target manager status.
+01:53:15 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+01:53:15 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+01:53:15 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+01:53:16 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:54:57 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+01:54:57 INFO  : Bootgen command execution is done.
+02:02:16 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:26:48 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:26:49 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+03:26:49 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441789763000,  Project:1441784260000
+03:26:49 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:26:49 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+03:27:17 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:27:46 INFO  : 
+03:27:48 INFO  : Updating hardware inferred compiler options for fsbl.
+03:27:49 INFO  : Clearing existing target manager status.
+03:27:54 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+03:27:54 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+03:27:54 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+03:27:57 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:29:03 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+03:29:05 INFO  : Bootgen command execution is done.
+03:35:11 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:33:12 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:33:12 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:33:12 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441844610000,  Project:1441789763000
+18:33:12 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:33:12 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:33:25 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:33:32 INFO  : 
+18:33:36 INFO  : Updating hardware inferred compiler options for fsbl.
+18:33:36 INFO  : Clearing existing target manager status.
+18:33:38 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+18:33:38 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+18:33:38 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+18:33:39 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:42:36 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+18:42:37 INFO  : Bootgen command execution is done.
+00:32:41 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:25:20 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:25:20 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+22:25:20 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441945449000,  Project:1441844610000
+22:25:20 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:25:21 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+22:25:35 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:25:42 INFO  : 
+22:25:44 INFO  : Updating hardware inferred compiler options for fsbl.
+22:25:44 INFO  : Clearing existing target manager status.
+22:25:47 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+22:25:47 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+22:25:47 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+22:25:48 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:26:59 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+22:27:00 INFO  : Bootgen command execution is done.
+22:27:39 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:55:09 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:55:09 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+22:55:09 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441947228000,  Project:1441945449000
+22:55:09 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:55:09 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+22:55:19 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:55:24 INFO  : 
+22:55:26 INFO  : Updating hardware inferred compiler options for fsbl.
+22:55:26 INFO  : Clearing existing target manager status.
+22:55:27 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+22:55:27 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+22:55:27 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+22:55:29 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:00:33 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:00:34 INFO  : Bootgen command execution is done.
+23:06:39 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:57:15 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:57:17 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+23:57:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441950763000,  Project:1441947228000
+23:57:17 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:57:17 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:57:30 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:57:37 INFO  : 
+23:57:39 INFO  : Updating hardware inferred compiler options for fsbl.
+23:57:39 INFO  : Clearing existing target manager status.
+23:57:42 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:57:42 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:57:42 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:57:42 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:59:16 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:59:17 INFO  : Bootgen command execution is done.
+00:40:16 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:44:19 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:44:19 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+00:44:19 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1441953833000,  Project:1441950763000
+00:44:19 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:44:19 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+00:44:28 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:44:36 INFO  : 
+00:44:38 INFO  : Updating hardware inferred compiler options for fsbl.
+00:44:38 INFO  : Clearing existing target manager status.
+00:44:40 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+00:44:40 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+00:44:40 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+00:44:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:45:03 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+00:45:04 INFO  : Bootgen command execution is done.
+00:55:30 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:57:02 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+17:57:02 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+17:57:02 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442015770000,  Project:1441953833000
+17:57:02 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+17:57:02 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+17:57:16 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:57:23 INFO  : 
+17:57:25 INFO  : Updating hardware inferred compiler options for fsbl.
+17:57:25 INFO  : Clearing existing target manager status.
+17:57:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+17:57:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+17:57:28 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+17:57:29 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:59:00 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+17:59:00 INFO  : Bootgen command execution is done.
+18:41:17 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442017944000,  Project:1442015770000
+18:41:20 INFO  : Project system_top_hw_platform_0's source hardware specification located at /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+18:41:47 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:41:57 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:42:28 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:42:28 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:44:27 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+18:44:28 INFO  : Bootgen command execution is done.
+21:56:54 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:56:54 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:56:54 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442030058000,  Project:1442017944000
+21:56:54 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:56:54 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:57:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:57:11 INFO  : 
+21:57:13 INFO  : Updating hardware inferred compiler options for fsbl.
+21:57:13 INFO  : Clearing existing target manager status.
+21:57:15 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+21:57:15 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+21:57:15 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+21:57:16 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:57:44 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+21:57:45 INFO  : Bootgen command execution is done.
+21:57:49 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:00:08 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:00:08 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+23:00:08 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442033927000,  Project:1442030058000
+23:00:08 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:00:08 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:00:22 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:00:30 INFO  : 
+23:00:32 INFO  : Updating hardware inferred compiler options for fsbl.
+23:00:32 INFO  : Clearing existing target manager status.
+23:00:34 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:00:34 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:00:34 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:00:35 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:11:38 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:11:38 INFO  : Bootgen command execution is done.
+23:16:22 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:43:11 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:43:11 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+23:43:11 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442036537000,  Project:1442033927000
+23:43:11 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:43:11 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:43:21 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:43:28 INFO  : 
+23:43:29 INFO  : Updating hardware inferred compiler options for fsbl.
+23:43:29 INFO  : Clearing existing target manager status.
+23:43:31 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:43:31 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:43:31 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:43:31 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:46:17 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:46:17 INFO  : Bootgen command execution is done.
+23:51:50 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:21:50 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:21:50 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+00:21:50 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442038762000,  Project:1442036537000
+00:21:50 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:21:50 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+00:21:52 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:22:00 INFO  : 
+00:22:01 INFO  : Updating hardware inferred compiler options for fsbl.
+00:22:01 INFO  : Clearing existing target manager status.
+00:22:03 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+00:22:03 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+00:22:03 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+00:22:03 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:23:11 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+00:23:11 INFO  : Bootgen command execution is done.
+00:32:24 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:23:48 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:23:48 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+01:23:48 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442042307000,  Project:1442038762000
+01:23:48 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:23:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+01:23:57 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:24:04 INFO  : 
+01:24:06 INFO  : Updating hardware inferred compiler options for fsbl.
+01:24:06 INFO  : Clearing existing target manager status.
+01:24:07 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+01:24:07 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+01:24:07 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+01:24:08 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:49:40 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+01:49:40 INFO  : Bootgen command execution is done.
+01:54:08 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:22:46 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:22:47 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+03:22:47 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442049074000,  Project:1442042307000
+03:22:47 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:22:47 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+03:22:56 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:23:03 INFO  : 
+03:23:05 INFO  : Updating hardware inferred compiler options for fsbl.
+03:23:05 INFO  : Clearing existing target manager status.
+03:23:06 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+03:23:06 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+03:23:06 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+03:23:06 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:23:44 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+03:23:45 INFO  : Bootgen command execution is done.
+03:34:02 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+17:29:26 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+17:29:26 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+17:29:26 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442100403000,  Project:1442049074000
+17:29:26 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+17:29:26 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+17:29:39 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+17:29:46 INFO  : 
+17:29:50 INFO  : Updating hardware inferred compiler options for fsbl.
+17:29:50 INFO  : Clearing existing target manager status.
+17:29:54 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+17:29:54 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+17:29:54 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+17:29:54 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+17:31:12 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+17:31:12 INFO  : Bootgen command execution is done.
+17:45:30 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:13:19 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:13:21 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:13:21 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442102982000,  Project:1442100403000
+18:13:21 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:13:21 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:13:30 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:13:37 INFO  : 
+18:13:38 INFO  : Updating hardware inferred compiler options for fsbl.
+18:13:38 INFO  : Clearing existing target manager status.
+18:13:39 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+18:13:39 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+18:13:39 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+18:13:40 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:15:59 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+18:16:00 INFO  : Bootgen command execution is done.
+18:16:03 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+18:52:33 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:52:33 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+18:52:33 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442105516000,  Project:1442102982000
+18:52:33 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+18:52:34 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+18:52:42 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+18:52:50 INFO  : 
+18:52:51 INFO  : Updating hardware inferred compiler options for fsbl.
+18:52:51 INFO  : Clearing existing target manager status.
+18:52:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+18:52:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+18:52:53 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+18:52:53 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+18:53:26 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+18:53:27 INFO  : Bootgen command execution is done.
+18:53:31 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+19:33:35 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:33:35 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+19:33:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442107987000,  Project:1442105516000
+19:33:35 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+19:33:35 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+19:33:37 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+19:33:45 INFO  : 
+19:33:47 INFO  : Updating hardware inferred compiler options for fsbl.
+19:33:47 INFO  : Clearing existing target manager status.
+19:33:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+19:33:48 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+19:33:48 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+19:33:48 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+19:34:17 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+19:34:17 INFO  : Bootgen command execution is done.
+21:40:34 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:40:35 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+21:40:35 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442113717000,  Project:1442107987000
+21:40:35 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+21:40:35 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+21:40:43 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:40:51 INFO  : 
+21:40:52 INFO  : Updating hardware inferred compiler options for fsbl.
+21:40:52 INFO  : Clearing existing target manager status.
+21:40:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+21:40:53 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+21:40:53 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+21:40:54 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+22:03:08 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+22:03:08 INFO  : Bootgen command execution is done.
+22:21:46 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+22:48:55 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:48:55 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+22:48:56 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442119455000,  Project:1442113717000
+22:48:56 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+22:48:56 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+22:49:04 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+22:49:12 INFO  : 
+22:49:15 INFO  : Updating hardware inferred compiler options for fsbl.
+22:49:15 INFO  : Clearing existing target manager status.
+22:49:16 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+22:49:16 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+22:49:16 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+22:49:16 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:02:24 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:02:24 INFO  : Bootgen command execution is done.
+23:39:02 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+23:39:22 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:39:22 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+23:39:22 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442122663000,  Project:1442119455000
+23:39:22 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+23:39:22 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+23:39:31 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+23:39:39 INFO  : 
+23:39:40 INFO  : Updating hardware inferred compiler options for fsbl.
+23:39:40 INFO  : Clearing existing target manager status.
+23:39:41 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+23:39:41 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+23:39:41 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+23:39:42 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+23:40:35 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+23:40:35 INFO  : Bootgen command execution is done.
+23:41:01 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+00:23:06 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:23:06 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+00:23:06 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442125358000,  Project:1442122663000
+00:23:06 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+00:23:06 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+00:23:15 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+00:23:23 INFO  : 
+00:23:24 INFO  : Updating hardware inferred compiler options for fsbl.
+00:23:24 INFO  : Clearing existing target manager status.
+00:23:25 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+00:23:25 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+00:23:25 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+00:23:26 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+00:24:55 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+00:24:55 INFO  : Bootgen command execution is done.
+01:05:25 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:26:08 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:26:08 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+01:26:08 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442129099000,  Project:1442125358000
+01:26:08 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:26:08 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+01:26:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:26:19 INFO  : 
+01:26:27 INFO  : Updating hardware inferred compiler options for fsbl.
+01:26:27 INFO  : Clearing existing target manager status.
+01:26:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+01:26:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+01:26:28 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+01:26:29 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:27:19 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+01:27:20 INFO  : Bootgen command execution is done.
+01:27:23 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:06:41 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+02:06:41 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+02:06:41 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442131551000,  Project:1442129099000
+02:06:41 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+02:06:41 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+02:06:50 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:06:57 INFO  : 
+02:06:59 INFO  : Updating hardware inferred compiler options for fsbl.
+02:06:59 INFO  : Clearing existing target manager status.
+02:07:00 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+02:07:00 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+02:07:00 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+02:07:01 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:08:51 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+02:08:51 INFO  : Bootgen command execution is done.
+02:26:28 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+02:57:58 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+02:57:59 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+02:57:59 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442134645000,  Project:1442131551000
+02:57:59 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+02:57:59 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+02:58:07 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+02:58:15 INFO  : 
+02:58:16 INFO  : Updating hardware inferred compiler options for fsbl.
+02:58:16 INFO  : Clearing existing target manager status.
+02:58:17 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+02:58:17 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+02:58:17 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+02:58:18 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+02:59:02 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+02:59:02 INFO  : Bootgen command execution is done.
+03:09:07 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:32:16 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:32:16 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+03:32:16 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442136707000,  Project:1442134645000
+03:32:16 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:32:16 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+03:32:18 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:32:25 INFO  : 
+03:32:27 INFO  : Updating hardware inferred compiler options for fsbl.
+03:32:27 INFO  : Clearing existing target manager status.
+03:32:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+03:32:28 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+03:32:28 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+03:32:29 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:33:20 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+03:33:20 INFO  : Bootgen command execution is done.
+03:33:25 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+04:09:01 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+04:09:01 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+04:09:01 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442138732000,  Project:1442136707000
+04:09:01 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+04:09:02 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+04:09:10 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+04:09:18 INFO  : 
+04:09:19 INFO  : Updating hardware inferred compiler options for fsbl.
+04:09:19 INFO  : Clearing existing target manager status.
+04:09:20 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+04:09:20 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+04:09:20 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+04:09:21 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+04:09:48 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+04:09:48 INFO  : Bootgen command execution is done.
+03:33:00 INFO  : Processing command line option -hwspec /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:33:00 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+03:33:00 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1442223127000,  Project:1442138732000
+03:33:00 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:33:00 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+03:33:14 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:33:22 INFO  : 
+03:33:23 INFO  : Updating hardware inferred compiler options for fsbl.
+03:33:23 INFO  : Clearing existing target manager status.
+03:33:27 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+03:33:27 INFO  : Copied contents of /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+03:33:27 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+03:33:28 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:34:33 INFO  : Invoking Bootgen: bootgen -image aes_ctr_full_static.bif -o i /Xilinx/xilinx_bootfiles/AES_CTR_QAM/BOOT_aes_ctr_static.bin -w on
+03:34:34 INFO  : Bootgen command execution is done.
+04:44:14 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 

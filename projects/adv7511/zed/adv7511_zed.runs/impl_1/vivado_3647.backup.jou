@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2014.2 (64-bit)
+# SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+# IP Build 924643 on Fri May 30 09:20:16 MDT 2014
+# Start of session at: Sun Sep 13 03:25:00 2015
+# Process ID: 3510
+# Log file: /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/system_top.vdi
+# Journal file: /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source system_top.tcl -notrace

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="system_synth_1" LaunchDir="/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.runs/system_synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.runs/synth_1" FlowId="Vivado Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="system_synth_1"/>
+	</Run>
+</Runs>
+
