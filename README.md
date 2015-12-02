@@ -1,3 +1,6 @@
+Forked from reference designs avaiable at git@github.com:analogdevicesinc/hdl.git provided by Analog Devices.
+
+
 hdl
 ===
 
