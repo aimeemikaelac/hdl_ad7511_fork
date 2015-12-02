@@ -1,0 +1,834 @@
+/*
+
+Vivado v2014.2 (64-bit)
+SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
+Process ID: 6414
+
+Current time: 	11/28/15 6:49:03 PM
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: DISTRIB_ID=Ubuntu
+Version: 3.16.0-53-generic
+Architecture: amd64
+Available processors (cores): 4
+
+DISPLAY: localhost:10.0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+
+Java version: 	1.7.0_40 64-bit
+Java home: 	/Xilinx/Vivado/2014.2/tps/lnx64/jre
+
+User name: 	michael
+User directory: /Xilinx/hdl_cav/projects/adv7511/zed
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+Gui allocated memory:	122 mb
+Gui max memory:		3,066 mb
+Engine allocated memory: 3,843 mb
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: START_PROGRESS_DIALOG
+// co:P (cg:JFrame):  Opening project 'adv7511_zed.xpr' : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project adv7511_zed.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: MSGMGR_REFRESH_MSG
+// HMemoryUtils.trashcanNow. Engine heap size: 3,852 MB. GUI used memory: 28 MB. Current time: 11/28/15 6:49:05 PM
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 35 mb (+34629kb) [00:00:15]
+// [Engine Memory]: 3,875 mb (+3911268kb) [00:00:15]
+// [GUI Memory]: 50 mb (+15630kb) [00:00:16]
+// [Engine Memory]: 3,888 mb (+13631kb) [00:00:16]
+// [Engine Memory]: 3,931 mb (+45563kb) [00:00:17]
+// [GUI Memory]: 91 mb (+42581kb) [00:00:19]
+// [Engine Memory]: 3,960 mb (+30715kb) [00:00:19]
+// [Engine Memory]: 3,963 mb (+3145kb) [00:00:19]
+// [Engine Memory]: 3,965 mb (+2097kb) [00:00:19]
+// [GUI Memory]: 98 mb (+7238kb) [00:00:19]
+// [Engine Memory]: 3,966 mb (+1048kb) [00:00:19]
+// [GUI Memory]: 107 mb (+9244kb) [00:00:19]
+// [Engine Memory]: 3,994 mb (+28639kb) [00:00:20]
+// [Engine Memory]: 3,999 mb (+5959kb) [00:00:21]
+// [Engine Memory]: 4,002 mb (+3149kb) [00:00:22]
+// Tcl Message: open_project adv7511_zed.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from '/Xilinx/hdl/projects/adv7511/zed' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/aes_runner'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/FIR_Master'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/AndroidRTR/HLS_IP_PY'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/Xilinx/Vivado/2014.2/data/ip'. 
+// Tcl Message: open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:15 . Memory (MB): peak = 4696.660 ; gain = 167.430 
+// TclEventType: STOP_PROGRESS_DIALOG
+// [Engine Memory]: 4,005 mb (+3149kb) [00:00:25]
+dismissDialog("Opening project 'adv7511_zed.xpr'"); // co:P (cg:JFrame)
+// TclEventType: STOP_PROGRESS_DIALOG
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cg:JFrame): Critical Messages: addNotify
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, a:a)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, IP Integrator, Open Block Design]", 6, false); // w:X (v:w, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_BLOCK_DESIGN
+// co:P (cg:JFrame):  Open Block Design : addNotify
+// TclEventType: LOAD_FEATURE
+// Tcl Message: open_bd_design {/Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd} 
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:processing_system7:5.4 - sys_ps7 
+// TclEventType: LOAD_FEATURE
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_main 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- analog.com:user:util_i2c_mixer:1.0 - sys_i2c_mixer Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - sys_concat_intc Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - sys_rstgen Adding component instance block -- xilinx.com:ip:util_vector_logic:1.0 - sys_logic_inv Adding component instance block -- analog.com:user:axi_clkgen:1.0 - axi_hdmi_clkgen Adding component instance block -- analog.com:user:axi_hdmi_tx:1.0 - axi_hdmi_core Adding component instance block -- xilinx.com:ip:axi_vdma:6.2 - axi_hdmi_dma 
+// TclEventType: RSB_PROPERTY_CHANGE
+// [Engine Memory]: 4,009 mb (+4198kb) [00:00:44]
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:clk_wiz:5.1 - sys_audio_clkgen Adding component instance block -- analog.com:user:axi_spdif_tx:1.0 - axi_spdif_tx_core Adding component instance block -- analog.com:user:axi_i2s_adi:1.0 - axi_i2s_adi Adding component instance block -- xilinx.com:ip:axi_iic:2.0 - axi_iic_fmc Adding component instance block -- xilinx.com:hls:reset_axi:1.0 - reset_axi_0 Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0 Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_dma:7.1 - axi_dma_1 
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:hls:aes:1.0 - aes_1 
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 4,037 MB. GUI used memory: 49 MB. Current time: 11/28/15 6:49:40 PM
+// TclEventType: RSB_PROPERTY_CHANGE
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding component instance block -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Adding component instance block -- xilinx.com:ip:axi_crossbar:2.1 - xbar 
+// TclEventType: RSB_PROPERTY_CHANGE
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 4,049 mb (+41943kb) [00:00:50]
+// [Engine Memory]: 4,051 mb (+2097kb) [00:00:50]
+// Tcl Message: Adding component instance block -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc Successfully read diagram <system> from BD file </Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd> 
+// TclEventType: RSB_OPEN_DIAGRAM
+// [Engine Memory]: 4,188 mb (+143491kb) [00:00:55]
+// [Engine Memory]: 4,190 mb (+1769kb) [00:00:55]
+// TclEventType: RSB_CONNECTION_CHANGE
+// [Engine Memory]: 4,196 mb (+6160kb) [00:00:56]
+// [Engine Memory]: 4,197 mb (+1048kb) [00:00:56]
+// [Engine Memory]: 4,199 mb (+2097kb) [00:00:56]
+// [Engine Memory]: 4,200 mb (+1048kb) [00:00:56]
+// [Engine Memory]: 4,203 mb (+3145kb) [00:00:57]
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 4910.414 ; gain = 210.750 
+// 'aW' command handler elapsed time: 23 seconds
+// [Engine Memory]: 4,209 mb (+6483kb) [00:00:58]
+// [Engine Memory]: 4,216 mb (+7839kb) [00:00:58]
+// Elapsed time: 23 seconds
+dismissDialog("Open Block Design"); // co:P (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,219 MB. GUI used memory: 57 MB. Current time: 11/28/15 6:49:55 PM
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// [Engine Memory]: 4,219 mb (+3149kb) [00:01:05]
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// [Engine Memory]: 4,247 mb (+28893kb) [00:01:09]
+// Elapsed time: 11 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 272, 71, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets aes_1_m_axi_m_s2mm_ctl] [get_bd_intf_nets aes_1_m_axi_m_mm2s_ctl] [get_bd_intf_nets axi_dma_0_M_AXIS_MM2S] [get_bd_intf_nets axi_cpu_interconnect_M07_AXI] [get_bd_intf_nets aes_1_s_out_V_V] [get_bd_cells aes_1] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [Engine Memory]: 4,254 mb (+7839kb) [00:01:11]
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: delete_bd_objs [get_bd_intf_nets axi_dma_1_M_AXI_S2MM] [get_bd_intf_nets aes_0_axi_periph_1_M00_AXI] [get_bd_cells axi_dma_1] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_intf_nets aes_0_axi_periph_M00_AXI] [get_bd_intf_nets axi_dma_0_M_AXI_MM2S] [get_bd_cells axi_dma_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// [GUI Memory]: 107 mb (+134kb) [00:01:19]
+// [GUI Memory]: 108 mb (+985kb) [00:01:19]
+// [GUI Memory]: 109 mb (+985kb) [00:01:20]
+// Tcl Message: delete_bd_objs [get_bd_cells aes_0_axi_periph] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_cells aes_0_axi_periph_1] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 427, 291, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: delete_bd_objs [get_bd_nets xlconstant_0_dout] [get_bd_intf_nets axi_cpu_interconnect_M08_AXI] [get_bd_cells reset_axi_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 697, 410, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+// [GUI Memory]: 110 mb (+1250kb) [00:01:33]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 697, 410, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 697, 410, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 697, 410, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 697, 410, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+// Elapsed time: 14 seconds
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 357, 405, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: RDIResourceCommand.RDICommands_DELETE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: delete_bd_objs [get_bd_cells xlconstant_0] 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: DG_UPDATE_GRAPH
+// Tcl Message: Wrote  : </Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // Y:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // Y:JMenu (JPopupMenu:JComponent, Popup:JWindow)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SETTINGS, "Project Settings..."); // ab:JMenuItem (JPopupMenu:JComponent, Popup:JWindow)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+selectButton("IP", "IP"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:bo)
+selectButton(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_IP_REPOSITORIES, "Add Repository..."); // a:JButton (JPanel:JComponent, k:bo)
+// Elapsed time: 17 seconds
+setFolderChooser("/home/michael/Documents/CAV_Midterm_PriorityQueue");
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property ip_repo_paths  {/Xilinx/hdl_cav/library /home/michael/Documents/CAV_Midterm_PriorityQueue /Xilinx/QAM_Master /Xilinx/xapp1173/VHLS_proj /Xilinx/QAM_Runner /Xilinx/aes_runner /Xilinx/FIR_Master /Xilinx/AndroidRTR/HLS_IP_PY} [current_fileset] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// co:P (cg:JFrame):  Refresh All IP Repositories : addNotify
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/hdl_cav/library'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/michael/Documents/CAV_Midterm_PriorityQueue'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/QAM_Master'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/xapp1173/VHLS_proj'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/aes_runner'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/FIR_Master'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/AndroidRTR/HLS_IP_PY'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 116 mb (+6033kb) [00:02:45]
+dismissDialog("Refresh All IP Repositories"); // co:P (cg:JFrame)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "/Xilinx/QAM_Master", 2); // p:a (JViewport:JComponent, k:bo)
+selectButton(PAResourceAtoD.AbstractMultiChooser_REMOVE_SELECTED_FILES_AND_DIRECTORIES, (String) null); // a:JButton (JPanel:JComponent, k:bo)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property ip_repo_paths  {/Xilinx/hdl_cav/library /home/michael/Documents/CAV_Midterm_PriorityQueue /Xilinx/xapp1173/VHLS_proj /Xilinx/QAM_Runner /Xilinx/aes_runner /Xilinx/FIR_Master /Xilinx/AndroidRTR/HLS_IP_PY} [current_fileset] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// co:P (cg:JFrame):  Refresh All IP Repositories : addNotify
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/hdl_cav/library'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/michael/Documents/CAV_Midterm_PriorityQueue'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/xapp1173/VHLS_proj'. 
+// Tcl Message: INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/aes_runner'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/FIR_Master'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/AndroidRTR/HLS_IP_PY'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 117 mb (+1408kb) [00:02:55]
+// [GUI Memory]: 124 mb (+7350kb) [00:02:56]
+dismissDialog("Refresh All IP Repositories"); // co:P (cg:JFrame)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "/Xilinx/QAM_Runner", 3); // p:a (JViewport:JComponent, k:bo)
+selectButton(PAResourceAtoD.AbstractMultiChooser_REMOVE_SELECTED_FILES_AND_DIRECTORIES, (String) null); // a:JButton (JPanel:JComponent, k:bo)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property ip_repo_paths  {/Xilinx/hdl_cav/library /home/michael/Documents/CAV_Midterm_PriorityQueue /Xilinx/xapp1173/VHLS_proj /Xilinx/aes_runner /Xilinx/FIR_Master /Xilinx/AndroidRTR/HLS_IP_PY} [current_fileset] 
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 128 mb (+3965kb) [00:03:01]
+// [Engine Memory]: 4,257 mb (+3219kb) [00:03:01]
+// [GUI Memory]: 135 mb (+7613kb) [00:03:01]
+// [Engine Memory]: 4,264 mb (+7086kb) [00:03:01]
+// [Engine Memory]: 4,267 mb (+2760kb) [00:03:02]
+// Tcl Message: update_ip_catalog 
+// co:P (cg:JFrame):  Refresh All IP Repositories : addNotify
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/hdl_cav/library'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/michael/Documents/CAV_Midterm_PriorityQueue'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/xapp1173/VHLS_proj'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/aes_runner'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/FIR_Master'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/AndroidRTR/HLS_IP_PY'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+// [GUI Memory]: 138 mb (+3164kb) [00:03:05]
+// [Engine Memory]: 4,274 mb (+7839kb) [00:03:06]
+dismissDialog("Refresh All IP Repositories"); // co:P (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,274 MB. GUI used memory: 56 MB. Current time: 11/28/15 6:52:00 PM
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "/Xilinx/aes_runner", 3); // p:a (JViewport:JComponent, k:bo)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "/Xilinx/aes_runner", 3); // p:a (JViewport:JComponent, k:bo)
+// Elapsed time: 16 seconds
+selectButton(PAResourceAtoD.AbstractMultiChooser_REMOVE_SELECTED_FILES_AND_DIRECTORIES, (String) null); // a:JButton (JPanel:JComponent, k:bo)
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: set_property ip_repo_paths  {/Xilinx/hdl_cav/library /home/michael/Documents/CAV_Midterm_PriorityQueue /Xilinx/xapp1173/VHLS_proj /Xilinx/AndroidRTR/HLS_IP_PY} [current_fileset] 
+// TclEventType: CREATE_IP_CATALOG
+// Tcl Message: update_ip_catalog 
+// co:P (cg:JFrame):  Refresh All IP Repositories : addNotify
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/hdl_cav/library'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/michael/Documents/CAV_Midterm_PriorityQueue'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/xapp1173/VHLS_proj'. INFO: [IP_Flow 19-1700] Loaded user IP repository '/Xilinx/AndroidRTR/HLS_IP_PY'. 
+// TclEventType: RSB_BITABEN_IPREPODATA_REFRESH
+// TclEventType: CREATE_IP_CATALOG
+dismissDialog("Refresh All IP Repositories"); // co:P (cg:JFrame)
+selectList(PAResourceOtoP.ProjectSettingsIPRepositoryPanel_REPOSITORY_CHOOSER, "/home/michael/Documents/CAV_Midterm_PriorityQueue", 1); // p:a (JViewport:JComponent, k:bo)
+selectButton("OK", "OK"); // JButton:AbstractButton (ButtonPanel:JPanel, k:bo)
+dismissDialog("Project Settings"); // k:bo (cg:JFrame)
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "Qu"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Queue ; xilinx.com:hls:queue:1.0", 38, "Queue", 0, false); // J:aq (JViewport:JComponent, ResizableWindow:JWindow)
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "Queue ; xilinx.com:hls:queue:1.0", 38, "Queue", 0, false, false, false, false, false, true); // J:aq (JViewport:JComponent, ResizableWindow:JWindow) - Double Click
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:hls:queue:1.0 queue_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CANVAS_LOCATION
+// Tcl Message: set_property location {2 682 1266} [get_bd_cells queue_0] 
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Elapsed time: 21 seconds
+selectButton(PAResourceQtoS.RSBApplyAutomationBar_RUN_CONNECTION_AUTOMATION, "Run Connection Automation"); // h:k (JPanel:JComponent, cg:JFrame)
+selectMenuItem((HResource) null, "/queue_0/S_AXI_AXI4LITES"); // ab:JMenuItem (ag:JPopupMenu, cg:JFrame)
+// o:t (cg:JFrame): Run Connection Automation: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, o:t)
+dismissDialog("Run Connection Automation"); // o:t (cg:JFrame)
+// TclEventType: RSB_SCRIPT_TASK
+// co:P (cg:JFrame):  Run Connection Automation : addNotify
+// Tcl Message: apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config {Master "/sys_ps7/M_AXI_GP0" Clk "Auto" }  [get_bd_intf_pins queue_0/S_AXI_AXI4LITES] 
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: </queue_0/S_AXI_AXI4LITES/Reg> is being mapped into </sys_ps7/Data> at <0x43C00000[ 64K ]> 
+dismissDialog("Run Connection Automation"); // co:P (cg:JFrame)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 971, 280, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+// Elapsed time: 37 seconds
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Address Editor", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+expandTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "Unconnected Slaves ; Unconnected Slaves ; Unconnected Slaves ; Unconnected Slaves ; Unconnected Slaves ; Unconnected Slaves", 15); // c:aq (JViewport:JComponent, cg:JFrame)
+selectTreeTable(PAResourceAtoD.AddressTreeTablePanel_ADDRESS_TREE_TABLE, "sys_ps7 ; S_AXI_HP1 ; HP1_DDR_LOWOCM ;  ;  ; ", 16, "sys_ps7", 0, false); // c:aq (JViewport:JComponent, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "System", 0); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cg:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // w:X (v:w, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// aR:ae (cg:JFrame): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a:JButton (JPanel:JComponent, aR:ae)
+// co:P (cg:JFrame):  Save Constraints : addNotify
+dismissDialog("Save Project"); // aR:ae (cg:JFrame)
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: Wrote  : </Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd>  
+// an:bF (cg:JFrame): Synthesis is Out-of-date: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, an:bF)
+// 'bJ' command handler elapsed time: 4 seconds
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // an:bF (cg:JFrame)
+dismissDialog("Synthesis is Out-of-date"); // an:bF (cg:JFrame)
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// co:P (cg:JFrame):  Generate Bitstream : addNotify
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /sys_ps7/S_AXI_HP0(8) and /axi_hdmi_interconnect/s00_couplers/auto_pc/M_AXI(2) INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /sys_ps7/S_AXI_HP0(READ_WRITE) and /axi_hdmi_interconnect/s00_couplers/auto_pc/M_AXI(READ_ONLY) 
+// Tcl Message: Exporting to file /Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/hw_handoff/system.hwh 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,275 mb (+1081kb) [00:05:35]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Verilog Output written to : system.v Verilog Output written to : system_wrapper.v 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,283 mb (+8192kb) [00:05:36]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Wrote  : </Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,286 mb (+3334kb) [00:05:37]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// [Engine Memory]: 4,290 mb (+4194kb) [00:05:41]
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 28 18:54:33 2015] Launched synth_1... Run output will be captured here: /Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.runs/synth_1/runme.log [Sat Nov 28 18:54:33 2015] Launched impl_1... Run output will be captured here: /Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 4998.074 ; gain = 16.023 
+// az:a (cg:JFrame): Launch Run Critical Messages: addNotify
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 28 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, az:a)
+dismissDialog("Launch Run Critical Messages"); // az:a (cg:JFrame)
+selectButton(PAResourceQtoS.StateMonitor_CANCEL, "Cancel"); // a:JButton (w:JPanel, cg:JFrame)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+selectButton("PAResourceQtoS.StateMonitor_YOU_ABOUT_TO_CANCEL_YOUR_RUNNING_Delete Files", "Delete Files"); // JButton:AbstractButton (JPanel:JComponent, P:JDialog)
+// Tcl Message: reset_run synth_1 
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// Run Command: PAResourceCommand.PACommandNames_ZOOM_IN
+// [Engine Memory]: 4,291 mb (+1048kb) [00:06:02]
+selectView(PAResourceOtoP.PAViews_SYSTEM, "System", 677, 208, 1210, 660, false, false, false, true, false); // dd:aC (TdiGroup:JideTabbedPane, cg:JFrame) - Popup Trigger
+// [Engine Memory]: 4,294 mb (+2785kb) [00:06:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,301 MB. GUI used memory: 56 MB. Current time: 11/28/15 6:55:00 PM
+// [Engine Memory]: 4,301 mb (+7561kb) [00:06:12]
+// Elapsed time: 11 seconds
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "const"); // OverlayTextField:JTextField (DefaultOverlayable:JPanel, ResizableWindow:JWindow)
+applyEnter(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, (String) null); // J:aq (JViewport:JComponent, ResizableWindow:JWindow)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_ADD_OBJECT
+// Tcl Message: startgroup 
+// Tcl Message: create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 
+// Tcl Message: endgroup 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_CONNECTION_CHANGE
+// Tcl Message: connect_bd_net [get_bd_pins queue_0/ap_start] [get_bd_pins xlconstant_0/dout] 
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_RSB_BLOC
+// q:P (cg:JFrame): Re-customize IP: addNotify
+// Elapsed time: 10 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, q:P)
+selectButton(PAResourceCommand.PACommandNames_REGENERATE_LAYOUT, "System_regenerate_rsb_layout"); // v:JideButton (CommandBar:DockableBar, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_REGENERATE_LAYOUT
+// TclEventType: RSB_LAYOUT_STATE
+// TclEventType: RSB_REGENERATE_LAYOUT
+// Tcl Message: regenerate_bd_layout 
+// Run Command: PAResourceCommand.PACommandNames_SAVE_RSB_DESIGN
+// TclEventType: RSB_SAVE_DIAGRAM
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SAVE_DIAGRAM
+// Tcl Message: save_bd_design 
+// Tcl Message: Wrote  : </Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd>  
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 23, false); // w:X (v:w, cg:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// an:bF (cg:JFrame): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a:JButton (JPanel:JComponent, an:bF)
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // an:bF (cg:JFrame)
+dismissDialog("No Implementation Results Available"); // an:bF (cg:JFrame)
+// Tcl Message: reset_run synth_1 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// co:P (cg:JFrame):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_REMOVE_OBJECT
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// Tcl Message: INFO: [BD 41-237] Bus Interface property NUM_READ_OUTSTANDING does not match between /sys_ps7/S_AXI_HP0(8) and /axi_hdmi_interconnect/s00_couplers/auto_pc/M_AXI(2) INFO: [BD 41-237] Bus Interface property READ_WRITE_MODE does not match between /sys_ps7/S_AXI_HP0(READ_WRITE) and /axi_hdmi_interconnect/s00_couplers/auto_pc/M_AXI(READ_ONLY) 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 4,307 mb (+6291kb) [00:06:47]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RSB_SCRIPT_TASK
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: Exporting to file /Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/hw_handoff/system.hwh 
+// Tcl Message: Verilog Output written to : system.v Verilog Output written to : system_wrapper.v Wrote  : </Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/system.bd>  
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Sat Nov 28 18:55:45 2015] Launched synth_1... Run output will be captured here: /Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.runs/synth_1/runme.log [Sat Nov 28 18:55:45 2015] Launched impl_1... Run output will be captured here: /Xilinx/hdl_cav/projects/adv7511/zed/adv7511_zed.runs/impl_1/runme.log 
+// Tcl Message: launch_runs: Time (s): cpu = 00:00:13 ; elapsed = 00:00:17 . Memory (MB): peak = 5014.941 ; gain = 6.000 
+// Elapsed time: 17 seconds
+dismissDialog("Generate Bitstream"); // co:P (cg:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// az:a (cg:JFrame): Launch Run Critical Messages: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 4,307 MB. GUI used memory: 63 MB. Current time: 11/28/15 7:25:00 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,307 MB. GUI used memory: 60 MB. Current time: 11/28/15 7:55:00 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,307 MB. GUI used memory: 61 MB. Current time: 11/28/15 8:25:01 PM
+// Elapsed time: 6339 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // i:a (JPanel:JComponent, az:a)
+// TclEventType: RUN_COMPLETED
+dismissDialog("Launch Run Critical Messages"); // az:a (cg:JFrame)
+// [Engine Memory]: 4,315 mb (+8388kb) [01:52:33]
+// N:an (cg:JFrame): Bitstream Generation Completed: addNotify
+selectRadioButton(PAResourceCommand.PACommandNames_REPORTS_WINDOW, "View Reports"); // a:JRadioButton (JPanel:JComponent, N:an)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, N:an)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // N:an (cg:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 4,315 MB. GUI used memory: 61 MB. Current time: 11/28/15 8:55:01 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,315 MB. GUI used memory: 59 MB. Current time: 11/28/15 9:25:01 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,324 MB. GUI used memory: 59 MB. Current time: 11/28/15 9:35:42 PM
+// [Engine Memory]: 4,324 mb (+9699kb) [02:47:01]
+// HMemoryUtils.trashcanNow. Engine heap size: 4,324 MB. GUI used memory: 59 MB. Current time: 11/28/15 10:05:43 PM
+// HMemoryUtils.trashcanNow. Engine heap size: 4,324 MB. GUI used memory: 59 MB. Current time: 11/28/15 10:35:44 PM
