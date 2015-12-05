@@ -54,32 +54,20 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_i2s_
 # IP: bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_iic_fmc_0 || ORIG_REF_NAME==system_axi_iic_fmc_0}]
 
-# IP: bd/system/ip/system_reset_axi_0_0/system_reset_axi_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_reset_axi_0_0 || ORIG_REF_NAME==system_reset_axi_0_0}]
-
-# IP: bd/system/ip/system_xlconstant_0_0/system_xlconstant_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xlconstant_0_0 || ORIG_REF_NAME==system_xlconstant_0_0}]
-
 # IP: bd/system/ip/system_axi_mem_intercon_0/system_axi_mem_intercon_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_mem_intercon_0 || ORIG_REF_NAME==system_axi_mem_intercon_0}]
 
 # IP: bd/system/ip/system_xbar_1/system_xbar_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_xbar_1 || ORIG_REF_NAME==system_xbar_1}]
 
-# IP: bd/system/ip/system_axi_dma_0_1/system_axi_dma_0_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_dma_0_1 || ORIG_REF_NAME==system_axi_dma_0_1}]
+# IP: bd/system/ip/system_runQueue_0_0/system_runQueue_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_runQueue_0_0 || ORIG_REF_NAME==system_runQueue_0_0}]
 
-# IP: bd/system/ip/system_axi_dma_1_1/system_axi_dma_1_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_dma_1_1 || ORIG_REF_NAME==system_axi_dma_1_1}]
+# IP: bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_0 || ORIG_REF_NAME==system_axi_gpio_0_0}]
 
-# IP: bd/system/ip/system_aes_0_axi_periph_1/system_aes_0_axi_periph_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_aes_0_axi_periph_1 || ORIG_REF_NAME==system_aes_0_axi_periph_1}]
-
-# IP: bd/system/ip/system_aes_0_axi_periph_1_1/system_aes_0_axi_periph_1_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_aes_0_axi_periph_1_1 || ORIG_REF_NAME==system_aes_0_axi_periph_1_1}]
-
-# IP: bd/system/ip/system_aes_1_0/system_aes_1_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_aes_1_0 || ORIG_REF_NAME==system_aes_1_0}]
+# IP: bd/system/ip/system_pqueue_0_1/system_pqueue_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_pqueue_0_1 || ORIG_REF_NAME==system_pqueue_0_1}]
 
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]
@@ -89,18 +77,6 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_
 
 # IP: bd/system/ip/system_auto_pc_2/system_auto_pc_2.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_2 || ORIG_REF_NAME==system_auto_pc_2}]
-
-# IP: bd/system/ip/system_auto_us_0/system_auto_us_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_0 || ORIG_REF_NAME==system_auto_us_0}]
-
-# IP: bd/system/ip/system_auto_us_1/system_auto_us_1.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_us_1 || ORIG_REF_NAME==system_auto_us_1}]
-
-# IP: bd/system/ip/system_auto_pc_3/system_auto_pc_3.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_3 || ORIG_REF_NAME==system_auto_pc_3}]
-
-# IP: bd/system/ip/system_auto_pc_4/system_auto_pc_4.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_4 || ORIG_REF_NAME==system_auto_pc_4}]
 
 # XDC: bd/system/ip/system_sys_ps7_0/system_sys_ps7_0.xdc
 set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_sys_ps7_0 || ORIG_REF_NAME==system_sys_ps7_0}] {/inst }]/inst ]]
@@ -147,27 +123,20 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 # XDC: bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_iic_fmc_0 || ORIG_REF_NAME==system_axi_iic_fmc_0}]
 
-# XDC: ipshared/xilinx.com/reset_axi_v1_0/1d7a11c5/constraints/reset_axi_ooc.xdc
-
 # XDC: bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc
 
-# XDC: bd/system/ip/system_axi_dma_0_1/system_axi_dma_0_1_ooc.xdc
+# XDC: ipshared/xilinx.com/runQueue_v1_0/fa8b2d42/constraints/runQueue_ooc.xdc
 
-# XDC: bd/system/ip/system_axi_dma_0_1/system_axi_dma_0_1.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_dma_0_1 || ORIG_REF_NAME==system_axi_dma_0_1}] {/U0 }]/U0 ]]
+# XDC: bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc
 
-# XDC: bd/system/ip/system_axi_dma_0_1/system_axi_dma_0_1_clocks.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_dma_0_1 || ORIG_REF_NAME==system_axi_dma_0_1}] {/U0 }]/U0 ]]
+# XDC: bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_0 || ORIG_REF_NAME==system_axi_gpio_0_0}] {/U0 }]/U0 ]]
 
-# XDC: bd/system/ip/system_axi_dma_1_1/system_axi_dma_1_1_ooc.xdc
+# XDC: bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_0_0 || ORIG_REF_NAME==system_axi_gpio_0_0}] {/U0 }]/U0 ]]
 
-# XDC: bd/system/ip/system_axi_dma_1_1/system_axi_dma_1_1.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_dma_1_1 || ORIG_REF_NAME==system_axi_dma_1_1}] {/U0 }]/U0 ]]
-
-# XDC: bd/system/ip/system_axi_dma_1_1/system_axi_dma_1_1_clocks.xdc
-#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_dma_1_1 || ORIG_REF_NAME==system_axi_dma_1_1}] {/U0 }]/U0 ]]
-
-# XDC: ipshared/xilinx.com/aes_v1_0/056a41ce/constraints/aes_ooc.xdc
+# XDC: ipshared/ngn.cs.colorado.edu/pqueue_v1_0/1d519e33/constrs_1/imports/verilog/runQueue.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_pqueue_0_1 || ORIG_REF_NAME==system_pqueue_0_1}]
 
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 
@@ -175,20 +144,6 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_auto_pc_2/system_auto_pc_2_ooc.xdc
 
-# XDC: bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc
-
-# XDC: bd/system/ip/system_auto_us_0/system_auto_us_0_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_auto_us_0 || ORIG_REF_NAME==system_auto_us_0}] {/inst }]/inst ]]
-
-# XDC: bd/system/ip/system_auto_us_1/system_auto_us_1_ooc.xdc
-
-# XDC: bd/system/ip/system_auto_us_1/system_auto_us_1_clocks.xdc
-set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_auto_us_1 || ORIG_REF_NAME==system_auto_us_1}] {/inst }]/inst ]]
-
-# XDC: bd/system/ip/system_auto_pc_3/system_auto_pc_3_ooc.xdc
-
-# XDC: bd/system/ip/system_auto_pc_4/system_auto_pc_4_ooc.xdc
-
 # XDC: bd/system/system_ooc.xdc
 
-# XDC: /Xilinx/hdl/projects/common/zed/zed_system_constr.xdc
+# XDC: /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/common/zed/zed_system_constr.xdc

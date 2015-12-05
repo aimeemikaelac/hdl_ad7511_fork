@@ -12,7 +12,7 @@ C_SRCS += \
 ../src/nand.c \
 ../src/nor.c \
 ../src/pcap.c \
-/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c \
+/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c \
 ../src/qspi.c \
 ../src/rsa.c \
 ../src/sd.c 
@@ -60,21 +60,21 @@ S_UPPER_DEPS += \
 src/%.o: ../src/%.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
 src/%.o: ../src/%.S
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-src/ps7_init.o: /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c
+src/ps7_init.o: /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: ARM gcc compiler'
-	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	arm-xilinx-eabi-gcc -Wall -O0 -g3 -I"/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0" -c -fmessage-length=0 -I../../fsbl_bsp/ps7_cortexa9_0/include -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 

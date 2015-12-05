@@ -15,7 +15,7 @@ src/qspi.d: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xstatus.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_assert.h ../src/fsbl_debug.h \
- /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
+ /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
  ../src/image_mover.h ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xqspips_hw.h
@@ -60,7 +60,7 @@ src/qspi.d: ../src/qspi.c ../src/qspi.h ../src/fsbl.h \
 
 ../src/fsbl_debug.h:
 
-/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
+/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

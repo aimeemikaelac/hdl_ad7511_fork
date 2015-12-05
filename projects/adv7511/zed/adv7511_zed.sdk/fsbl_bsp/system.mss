@@ -1,5 +1,5 @@
 
- PARAMETER NAME = /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/fsbl_bsp/system.mss
+ PARAMETER NAME = /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/fsbl_bsp/system.mss
 
  PARAMETER VERSION = 2.2.0
 
@@ -19,6 +19,12 @@ BEGIN PROCESSOR
  PARAMETER HW_INSTANCE = ps7_cortexa9_0
 END
 
+
+BEGIN DRIVER
+ PARAMETER DRIVER_NAME = gpio
+ PARAMETER DRIVER_VER = 4.0
+ PARAMETER HW_INSTANCE = axi_gpio_0
+END
 
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = generic
@@ -263,13 +269,7 @@ END
 BEGIN DRIVER
  PARAMETER DRIVER_NAME = generic
  PARAMETER DRIVER_VER = 2.0
- PARAMETER HW_INSTANCE = reset_axi_0
-END
-
-BEGIN DRIVER
- PARAMETER DRIVER_NAME = aes
- PARAMETER DRIVER_VER = 1.0
- PARAMETER HW_INSTANCE = aes_1
+ PARAMETER HW_INSTANCE = runQueue_0
 END
 
 

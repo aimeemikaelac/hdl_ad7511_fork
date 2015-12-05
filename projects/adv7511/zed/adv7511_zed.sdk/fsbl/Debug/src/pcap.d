@@ -16,7 +16,7 @@ src/pcap.d: ../src/pcap.c ../src/pcap.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_printf.h ../src/fsbl_debug.h \
- /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
+ /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
  ../src/image_mover.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_exception.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/sleep.h
@@ -63,7 +63,7 @@ src/pcap.d: ../src/pcap.c ../src/pcap.h \
 
 ../src/fsbl_debug.h:
 
-/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
+/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
 
 ../src/image_mover.h:
 

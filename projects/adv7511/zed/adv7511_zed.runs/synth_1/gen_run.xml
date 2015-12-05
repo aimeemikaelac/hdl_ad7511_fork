@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1442221879">
+<GenRun Id="synth_1" LaunchPart="xc7z020clg484-1" LaunchTime="1449349143">
   <File Type="VDS-TIMING-PB" Name="system_top_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="system_top_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="system_top.dcp"/>
   <File Type="RDS-UTIL-PB" Name="system_top_utilization_synth.pb"/>
-  <File Type="RDS-UTIL" Name="system_top_utilization_synth.rpt"/>
+  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
   <File Type="RDS-RDS" Name="system_top.vds"/>
-  <File Type="PA-TCL" Name="system_top.tcl"/>
-  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
   <File Type="VDS-HWDEF" Name="system_top.hwdef"/>
   <File Type="RUN-SRCS" Name="$PDATADIR/runs/synth_1/sources.xml"/>
-  <File Type="RUN-CONSTRS" Name="$PDATADIR/runs/synth_1/constrs_in.xml"/>
+  <File Type="RUN-STRAT" Name="$PDATADIR/runs/synth_1/synth_1.psg"/>
+  <File Type="PA-TCL" Name="system_top.tcl"/>
+  <File Type="RDS-UTIL" Name="system_top_utilization_synth.rpt"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/system/system.bd">
@@ -47,6 +47,16 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/imports/CAV_Midterm_PriorityQueue/gpqueue.v">
+      <FileInfo SFType="SVerilog">
+        <Attr Name="Library" Val="xil_defaultlib"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../../CAV_Midterm_PriorityQueue/gpqueue.v"/>
+        <Attr Name="ImportTime" Val="1449078507"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../common/zed/zed_system_constr.xdc">
       <FileInfo>
         <Attr Name="Library" Val="xil_defaultlib"/>
@@ -66,11 +76,6 @@
         <Attr Name="Library" Val="xil_defaultlib"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PSRCDIR/sources_1/bd/system/ip/system_aes_1_0/system_aes_1_0.upgrade_log">
-      <FileInfo>
-        <Attr Name="Library" Val="xil_defaultlib"/>
       </FileInfo>
     </File>
     <Config>

@@ -1,4 +1,4 @@
-03:33:28 **** Build of project fsbl_bsp ****
+14:43:22 **** Build of project fsbl_bsp ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/axivdma_v5_0/src
 make -C ps7_cortexa9_0/libsrc/axivdma_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -12,6 +12,8 @@ Running Make include in ps7_cortexa9_0/libsrc/emacps_v2_0/src
 make -C ps7_cortexa9_0/libsrc/emacps_v2_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Running Make include in ps7_cortexa9_0/libsrc/gpiops_v2_1/src
 make -C ps7_cortexa9_0/libsrc/gpiops_v2_1/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Running Make include in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Running Make include in ps7_cortexa9_0/libsrc/iic_v3_0/src
 make -C ps7_cortexa9_0/libsrc/iic_v3_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_0/src
@@ -55,6 +57,9 @@ Compiling emacps
 Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v2_1/src
 make -C ps7_cortexa9_0/libsrc/gpiops_v2_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Compiling gpiops
+Running Make libs in ps7_cortexa9_0/libsrc/gpio_v4_0/src
+make -C ps7_cortexa9_0/libsrc/gpio_v4_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
+Compiling gpio
 Running Make libs in ps7_cortexa9_0/libsrc/iic_v3_0/src
 make -C ps7_cortexa9_0/libsrc/iic_v3_0/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Compiling iic
@@ -93,5 +98,5 @@ Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src
 make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Finished building libraries
 
-03:33:35 Build Finished (took 6s.756ms)
+14:43:29 Build Finished (took 6s.764ms)
 

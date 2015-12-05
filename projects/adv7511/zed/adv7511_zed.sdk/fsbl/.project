@@ -27,7 +27,7 @@
 		<link>
 			<name>src/ps7_init.c</name>
 			<type>1</type>
-			<location>/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c</location>
+			<location>/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c</location>
 		</link>
 	</linkedResources>
 </projectDescription>

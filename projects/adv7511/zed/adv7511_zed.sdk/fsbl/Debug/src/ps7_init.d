@@ -1,6 +1,6 @@
 src/ps7_init.d: \
- /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c \
- /Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
+ /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.c \
+ /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xil_types.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xpseudo_asm.h \
@@ -10,7 +10,7 @@ src/ps7_init.d: \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters.h \
  ../../fsbl_bsp/ps7_cortexa9_0/include/xparameters_ps.h
 
-/Xilinx/hdl/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
+/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.h:
 
 ../../fsbl_bsp/ps7_cortexa9_0/include/xil_io.h:
 
