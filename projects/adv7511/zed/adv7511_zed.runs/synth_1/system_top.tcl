@@ -5,8 +5,8 @@
   set_param gui.test TreeTableDev
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} 
+set_msg_config  -id {BD 41-1348}  -new_severity {INFO} 
 set_msg_config  -id {BD 41-1343}  -new_severity {INFO} 
 set_msg_config  -id {BD 41-1306}  -new_severity {INFO} 
 set_msg_config  -id {IP_Flow 19-1687}  -new_severity {INFO} 
@@ -15,7 +15,6 @@ set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Probl
 set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.}}  -suppress 
 set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.}}  -suppress 
 set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.}}  -suppress 
-set_msg_config  -id {BD 41-1348}  -new_severity {INFO} 
 create_project -in_memory -part xc7z020clg484-1
 set_property target_language Verilog [current_project]
 set_property board_part em.avnet.com:zed:part0:1.0 [current_project]
@@ -50,7 +49,7 @@ set_property used_in_implementation false [get_files -all /home/michael/ecen5139
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/fa8b2d42/constraints/runQueue_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/ab7fa62d/constraints/runQueue_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]

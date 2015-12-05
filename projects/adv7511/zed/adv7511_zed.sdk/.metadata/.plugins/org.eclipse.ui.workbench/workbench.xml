@@ -75,7 +75,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.xilinx.sdk.sw.MSSEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -211,13 +211,15 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/system_top_hw_platform_0/system.hdf"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/system_top_hw_platform_0/system.hdf"/>
 </editors>
 <item historyLabel="system.hdf" index="0"/>
 <item historyLabel="system.mss" index="1"/>
 <item historyLabel="system.hdf" index="2"/>
 <item historyLabel="system.mss" index="3"/>
 <item historyLabel="system.hdf" index="2"/>
-<item active="true" historyLabel="system.mss" index="4"/>
+<item historyLabel="system.mss" index="4"/>
+<item active="true" historyLabel="system.hdf" index="5"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>

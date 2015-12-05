@@ -22,28 +22,28 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_cpu_interconnect_0/system_axi_cpu_interconnect_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_concat_intc_0/system_sys_concat_intc_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_i2c_mixer_0/system_sys_i2c_mixer_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_ps7_0/system_sys_ps7_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_iic_main_0/system_axi_iic_main_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_pqueue_0_1/system_pqueue_0_1.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_1/system_xbar_1.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_runQueue_0_0/system_runQueue_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_mem_intercon_0/system_axi_mem_intercon_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="hdl/system.v"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_i2s_adi_0/system_axi_i2s_adi_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_spdif_tx_core_0/system_axi_spdif_tx_core_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_clkgen_0/system_axi_hdmi_clkgen_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_core_0/system_axi_hdmi_core_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_i2c_mixer_0/system_sys_i2c_mixer_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="hdl/system.v"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_rstgen_0/system_sys_rstgen_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_logic_inv_0/system_sys_logic_inv_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_interconnect_0/system_axi_hdmi_interconnect_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_mem_intercon_0/system_axi_mem_intercon_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_1/system_xbar_1.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_runQueue_0_0/system_runQueue_0_0.xci"/>
-        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_dma_0/system_axi_hdmi_dma_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_core_0/system_axi_hdmi_core_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_hdmi_clkgen_0/system_axi_hdmi_clkgen_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_logic_inv_0/system_sys_logic_inv_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_rstgen_0/system_sys_rstgen_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_cpu_interconnect_0/system_axi_cpu_interconnect_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/system_wrapper.v">
         <FileInfo>
@@ -95,6 +95,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sources_1/bd/system/ip/system_runQueue_0_0/system_runQueue_0_0.upgrade_log"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="system_top"/>
@@ -165,6 +166,16 @@
     <MsgAttr Name="NewSeverity" Val="ERROR"/>
     <MsgAttr Name="Id" Val="BD 41-1276"/>
     <MsgAttr Name="Severity" Val="CRITICAL WARNING"/>
+    <MsgAttr Name="ShowRule" Val="1"/>
+    <MsgAttr Name="RuleSource" Val="2"/>
+    <MsgAttr Name="StringIsRegExp" Val="0"/>
+  </MsgRule>
+  <MsgRule>
+    <MsgAttr Name="RuleType" Val="1"/>
+    <MsgAttr Name="Limit" Val="-1"/>
+    <MsgAttr Name="NewSeverity" Val="INFO"/>
+    <MsgAttr Name="Id" Val="BD 41-1348"/>
+    <MsgAttr Name="Severity" Val="ANY"/>
     <MsgAttr Name="ShowRule" Val="1"/>
     <MsgAttr Name="RuleSource" Val="2"/>
     <MsgAttr Name="StringIsRegExp" Val="0"/>
@@ -252,15 +263,5 @@
     <MsgAttr Name="RuleSource" Val="8"/>
     <MsgAttr Name="StringIsRegExp" Val="0"/>
     <MsgAttr Name="StringsToMatch" Val="CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part &apos;xc7k325tffg900-2&apos; is either not supported or invalid."/>
-  </MsgRule>
-  <MsgRule>
-    <MsgAttr Name="RuleType" Val="1"/>
-    <MsgAttr Name="Limit" Val="-1"/>
-    <MsgAttr Name="NewSeverity" Val="INFO"/>
-    <MsgAttr Name="Id" Val="BD 41-1348"/>
-    <MsgAttr Name="Severity" Val="ANY"/>
-    <MsgAttr Name="ShowRule" Val="1"/>
-    <MsgAttr Name="RuleSource" Val="2"/>
-    <MsgAttr Name="StringIsRegExp" Val="0"/>
   </MsgRule>
 </Project>
