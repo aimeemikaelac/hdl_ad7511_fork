@@ -44,9 +44,8 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} 
+set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.}}  -suppress 
 set_msg_config  -id {BD 41-1348}  -new_severity {INFO} 
 set_msg_config  -id {BD 41-1343}  -new_severity {INFO} 
 set_msg_config  -id {BD 41-1306}  -new_severity {INFO} 
@@ -55,7 +54,6 @@ set_msg_config  -id {filemgmt 20-1763}  -new_severity {INFO}
 set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/1.0/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.}}  -suppress 
 set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/zynq/zc706/0.9/board_part.xml, The board part 'xc7z045ffg900-2' is either not supported or invalid.}}  -suppress 
 set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/1.0/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.}}  -suppress 
-set_msg_config  -id {Board 49-4}  -string {{CRITICAL WARNING: [Board 49-4] Problem parsing board_part file - /Xilinx/Vivado/2014.2/data/boards/board_parts/kintex7/kc705/0.9/board_part.xml, The board part 'xc7k325tffg900-2' is either not supported or invalid.}}  -suppress 
 
 start_step init_design
 set rc [catch {
