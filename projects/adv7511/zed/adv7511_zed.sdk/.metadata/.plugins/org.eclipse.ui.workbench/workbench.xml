@@ -32,12 +32,16 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
+<part id="1"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/fsbl_bsp/system.mss" title="system.mss" tooltip="fsbl_bsp/system.mss" workbook="DefaultEditorWorkbook">
+<editor id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" partName="system.mss" path="/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/fsbl_bsp/system.mss" title="system.mss" tooltip="fsbl_bsp/system.mss" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/fsbl_bsp/system.mss"/>
+</editor>
+<editor activePart="true" focus="true" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.hdf" partName="system.hdf" path="/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_1/system.hdf" title="system.hdf" tooltip="system_top_hw_platform_1/system.hdf" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/system_top_hw_platform_1/system.hdf"/>
 </editor>
 </editors>
 <views>
@@ -71,7 +75,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="com.xilinx.sdk.sw.MSSEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.ui.navigator.ProjectExplorer" activePerspective="org.eclipse.cdt.ui.CPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -223,6 +227,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/system_top_hw_platform_1/system.hdf"/>
 </editors>
 <item historyLabel="system.hdf" index="0"/>
 <item historyLabel="system.mss" index="1"/>
@@ -259,7 +264,8 @@
 <item historyLabel="system.hdf" index="5"/>
 <item historyLabel="system.mss" index="19"/>
 <item historyLabel="system.hdf" index="5"/>
-<item active="true" historyLabel="system.mss" index="20"/>
+<item historyLabel="system.mss" index="20"/>
+<item active="true" historyLabel="system.hdf" index="21"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
@@ -277,6 +283,9 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" name="system.hdf" tooltip="system_top_hw_platform_1/system.hdf">
+<persistable path="/system_top_hw_platform_1/system.hdf"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" name="system.mss" tooltip="fsbl_bsp/system.mss">
 <persistable path="/fsbl_bsp/system.mss"/>
 </file>
