@@ -213,6 +213,7 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/system_top_hw_platform_0/system.hdf"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
 </editors>
 <item historyLabel="system.hdf" index="0"/>
 <item historyLabel="system.mss" index="1"/>
@@ -222,6 +223,8 @@
 <item historyLabel="system.mss" index="4"/>
 <item historyLabel="system.hdf" index="5"/>
 <item historyLabel="system.mss" index="6"/>
+<item historyLabel="system.hdf" index="5"/>
+<item historyLabel="system.mss" index="7"/>
 <item active="true" historyLabel="system.hdf" index="5"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

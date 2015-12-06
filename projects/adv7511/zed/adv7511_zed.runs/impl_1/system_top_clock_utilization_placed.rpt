@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Sat Dec  5 16:53:41 2015
+| Date         : Sat Dec  5 17:35:36 2015
 | Host         : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 | Command      : report_clock_utilization -file system_top_clock_utilization_placed.rpt
 | Design       : system_top
@@ -24,6 +24,7 @@ Table of Contents
 10. Net wise resources used in clock region X0Y1
 11. Net wise resources used in clock region X1Y1
 12. Net wise resources used in clock region X0Y2
+13. Net wise resources used in clock region X1Y2
 
 1. Clock Primitive Utilization
 ------------------------------
@@ -52,9 +53,9 @@ Table of Contents
 |     1 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_fb_clk_bufg  | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/bufg_fb_clk_s                |    1 |     1 |    no |         1.834 |     0.092 |
 |     2 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clkf_buf                 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clkfbout_buf_system_sys_audio_clkgen_0 |    1 |     1 |    no |         1.878 |     0.094 |
 |     3 | i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_1.FCLK_CLK_1_BUFG | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK1                                       |    2 |     2 |    no |         1.876 |     0.137 |
-|     4 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf              | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1                               |   32 |    15 |    no |         2.983 |     1.340 |
-|     5 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_clk_0_bufg   | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0                        |  995 |   260 |    no |         2.258 |     0.624 |
-|     6 | i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                                       | 5099 |  1696 |    no |         2.048 |     0.417 |
+|     4 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf              | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1                               |   32 |    13 |    no |         2.983 |     1.276 |
+|     5 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_clk_0_bufg   | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0                        |  995 |   267 |    no |         2.258 |     0.661 |
+|     6 | i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                                       | 5182 |  1587 |    no |         2.063 |     0.471 |
 +-------+--------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------+-------+-------+---------------+-----------+
 
 
@@ -90,12 +91,12 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 | 1540 | 20000 |   75 |  4000 |    0 |    60 |    2 |    30 |    0 |    60 |
-| X1Y0              |    5 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    1 |    50 |  278 | 25600 |   87 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
-| X0Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2856 |  9600 |  155 |  1600 |    0 |    20 |    0 |    10 |    9 |    20 |
-| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  839 | 20800 |   34 |  3400 |    1 |    60 |    0 |    30 |    0 |    40 |
-| X0Y2              |    1 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |  223 |  9600 |   22 |  1600 |    0 |    20 |    0 |    10 |    0 |    20 |
-| X1Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 | 20800 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y0              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  232 | 20000 |   18 |  4000 |    0 |    60 |    0 |    30 |    0 |    60 |
+| X1Y0              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    1 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    1 |    50 |   10 | 25600 |    0 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y1              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 1885 |  9600 |  156 |  1600 |    0 |    20 |    2 |    10 |    0 |    20 |
+| X1Y1              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  948 | 20800 |   42 |  3400 |    0 |    60 |    0 |    30 |    0 |    40 |
+| X0Y2              |    3 |    12 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 |    0 |     0 | 2212 |  9600 |  155 |  1600 |    0 |    20 |    0 |    10 |    9 |    20 |
+| X1Y2              |    3 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  532 | 20800 |    2 |  3400 |    1 |    60 |    0 |    30 |    0 |    40 |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 * RAMB36 site can be used as two RAMB18/FIFO18 sites
 
@@ -103,15 +104,13 @@ Table of Contents
 8. Net wise resources used in clock region X0Y0
 -----------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                              Clock Net Name                             |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/bufg_fb_clk_s |
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |    0 |     0 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK1                        |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    8 |     8 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1                |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         1 |       0 |       0 |   33 |     0 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0         |
-| BUFG        |     ---     |   no  |         1 |        0 |       0 |         3 |       0 |       0 | 1499 |    67 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                        |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-------------------------------------------------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                              Clock Net Name                             |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/bufg_fb_clk_s |
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK1                        |
+| BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 | 232 |    18 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                        |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-------------------------------------------------------------------------+
 
 
 9. Net wise resources used in clock region X1Y0
@@ -122,9 +121,7 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------+
 | BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clkfbout_buf_system_sys_audio_clkgen_0 |
 | BUFG        |     ---     |   no  |         1 |        0 |       0 |         0 |       0 |       0 |   0 |     0 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK1                                       |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1                               |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       1 |   7 |     2 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0                        |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 270 |    85 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                                       |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       1 |  10 |     0 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0                        |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+----------------------------------------------------------------------------------------+
 
 
@@ -134,9 +131,9 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                          Clock Net Name                         |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   14 |     0 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1        |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  814 |     2 |        9 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 2028 |   153 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |    1 |     0 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1        |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         1 |       0 |       0 |   33 |     0 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         3 |       0 |       0 | 1851 |   156 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------+
 
 
@@ -146,19 +143,33 @@ Table of Contents
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------+
 | Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                          Clock Net Name                         |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 121 |     5 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0 |
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 718 |    29 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   9 |     3 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 939 |    39 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                |
 +-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------+
 
 
 12. Net wise resources used in clock region X0Y2
 ------------------------------------------------
 
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------+
-| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                  Clock Net Name                  |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------+
-| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 223 |    22 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0 |
-+-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+--------------------------------------------------+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs |  FFs | LUTMs | DSP48E1s |                          Clock Net Name                         |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   21 |     8 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1        |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |  918 |     4 |        9 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 | 1273 |   143 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+------+-------+----------+-----------------------------------------------------------------+
+
+
+13. Net wise resources used in clock region X1Y2
+------------------------------------------------
+
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------+
+| Source Type | BUFHCE Site | Fixed | MMCM Pins | PLL Pins | GT Pins | BRAM Pins | ILOGICs | OLOGICs | FFs | LUTMs | DSP48E1s |                          Clock Net Name                         |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------+
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   1 |     0 |        0 | i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1        |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         0 |       0 |       0 |   5 |     2 |        0 | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/clk_0 |
+| BUFG        |     ---     |   no  |         0 |        0 |       0 |         1 |       0 |       0 | 526 |     0 |        0 | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK0                |
++-------------+-------------+-------+-----------+----------+---------+-----------+---------+---------+-----+-------+----------+-----------------------------------------------------------------+
 
 
 
