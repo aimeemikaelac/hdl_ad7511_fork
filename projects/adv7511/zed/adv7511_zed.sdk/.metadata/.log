@@ -25,3 +25,12 @@ Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/michael/ecen
 
 !ENTRY org.eclipse.cdt.core 1 0 2015-12-05 14:43:32.718
 !MESSAGE Indexed 'fsbl_bsp' (135 sources, 159 headers) in 2.27 sec: 7,821 declarations; 36,211 references; 67 unresolved inclusions; 9 syntax errors; 38 unresolved names (0.09%)
+!SESSION 2015-12-05 19:26:26.300 -----------------------------------------------
+eclipse.buildId=2014.2
+java.version=1.7.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -data /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk
+
+!ENTRY org.eclipse.core.jobs 2 2 2015-12-05 19:30:39.213
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: com.xilinx.sdk.hw.sync.HwPlatformMonitorUtils$1
