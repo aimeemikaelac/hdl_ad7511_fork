@@ -1,4 +1,4 @@
-21:29:23 **** Build of configuration Debug for project fsbl ****
+22:06:25 **** Build of configuration Debug for project fsbl ****
 make all 
 Building file: ../src/ddr_init.c
 Invoking: ARM gcc compiler
@@ -77,5 +77,5 @@ arm-xilinx-eabi-size fsbl.elf  |tee "fsbl.elf.size"
 Finished building: fsbl.elf.size
  
 
-21:29:26 Build Finished (took 2s.798ms)
+22:06:26 Build Finished (took 873ms)
 
