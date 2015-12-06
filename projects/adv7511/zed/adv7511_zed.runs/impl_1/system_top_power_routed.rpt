@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Sun Dec  6 00:42:35 2015
+| Date             : Sun Dec  6 01:02:17 2015
 | Host             : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 | Command          : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb
 | Design           : system_top
@@ -50,16 +50,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.032 |        8 |       --- |             --- |
-| Slice Logic              |     0.014 |    12976 |       --- |             --- |
-|   LUT as Logic           |     0.012 |     4640 |     53200 |            8.72 |
-|   Register               |    <0.001 |     6000 |    106400 |            5.63 |
-|   CARRY4                 |    <0.001 |      315 |     13300 |            2.36 |
+| Clocks                   |     0.033 |        8 |       --- |             --- |
+| Slice Logic              |     0.013 |    12812 |       --- |             --- |
+|   LUT as Logic           |     0.011 |     4581 |     53200 |            8.61 |
+|   Register               |    <0.001 |     5932 |    106400 |            5.57 |
+|   CARRY4                 |    <0.001 |      311 |     13300 |            2.33 |
 |   LUT as Distributed RAM |    <0.001 |       74 |     17400 |            0.42 |
 |   LUT as Shift Register  |    <0.001 |      153 |     17400 |            0.87 |
 |   F7/F8 Muxes            |    <0.001 |        8 |     53200 |            0.01 |
-|   Others                 |     0.000 |      684 |       --- |             --- |
-| Signals                  |     0.018 |     9856 |       --- |             --- |
+|   Others                 |     0.000 |      675 |       --- |             --- |
+| Signals                  |     0.018 |     9763 |       --- |             --- |
 | Block RAM                |     0.005 |        2 |       140 |            1.42 |
 | MMCM                     |     0.099 |        2 |         4 |           50.00 |
 | DSPs                     |     0.004 |        9 |       220 |            4.09 |
@@ -176,7 +176,7 @@ Table of Contents
 |     g_iobuf[16].i_iobuf                                                          |    <0.001 |
 |     g_iobuf[17].i_iobuf                                                          |    <0.001 |
 |     g_iobuf[18].i_iobuf                                                          |    <0.001 |
-|     g_iobuf[19].i_iobuf                                                          |     0.002 |
+|     g_iobuf[19].i_iobuf                                                          |     0.001 |
 |     g_iobuf[1].i_iobuf                                                           |    <0.001 |
 |     g_iobuf[20].i_iobuf                                                          |     0.001 |
 |     g_iobuf[21].i_iobuf                                                          |     0.002 |
@@ -231,7 +231,7 @@ Table of Contents
 |         xbar                                                                     |     0.002 |
 |           inst                                                                   |     0.002 |
 |             gen_sasd.crossbar_sasd_0                                             |     0.002 |
-|               addr_arbiter_inst                                                  |     0.002 |
+|               addr_arbiter_inst                                                  |     0.001 |
 |               gen_decerr.decerr_slave_inst                                       |    <0.001 |
 |               splitter_ar                                                        |    <0.001 |
 |               splitter_aw                                                        |    <0.001 |
@@ -299,7 +299,7 @@ Table of Contents
 |           i_up                                                                   |     0.006 |
 |             i_hdmi_clock_mon                                                     |     0.001 |
 |             i_hdmi_rst_reg                                                       |    <0.001 |
-|             i_hdmi_xfer_cntrl                                                    |     0.002 |
+|             i_hdmi_xfer_cntrl                                                    |     0.003 |
 |             i_hdmi_xfer_status                                                   |    <0.001 |
 |             i_vdma_rst_reg                                                       |    <0.001 |
 |             i_vdma_xfer_status                                                   |    <0.001 |
@@ -563,7 +563,7 @@ Table of Contents
 |       runQueue_0                                                                 |     0.002 |
 |         inst                                                                     |     0.002 |
 |           runQueue_AXI4LiteS_if_U                                                |    <0.001 |
-|           runQueue_U                                                             |     0.002 |
+|           runQueue_U                                                             |     0.001 |
 |       sys_audio_clkgen                                                           |    <0.001 |
 |         inst                                                                     |    <0.001 |
 |       sys_concat_intc                                                            |     0.000 |
