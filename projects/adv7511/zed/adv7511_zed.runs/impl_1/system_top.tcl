@@ -44,6 +44,8 @@ proc step_failed { step } {
 
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} 
 set_msg_config  -id {BD 41-1348}  -new_severity {INFO} 
 set_msg_config  -id {BD 41-1343}  -new_severity {INFO} 

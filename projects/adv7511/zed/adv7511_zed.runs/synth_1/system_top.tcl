@@ -5,6 +5,8 @@
   set_param gui.test TreeTableDev
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 set_msg_config  -id {BD 41-1276}  -severity {CRITICAL WARNING}  -new_severity {ERROR} 
 set_msg_config  -id {BD 41-1348}  -new_severity {INFO} 
 set_msg_config  -id {BD 41-1343}  -new_severity {INFO} 
@@ -49,7 +51,7 @@ set_property used_in_implementation false [get_files -all /home/michael/ecen5139
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/4ca979c2/constraints/runQueue_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/d7a61abc/constraints/runQueue_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
 set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]

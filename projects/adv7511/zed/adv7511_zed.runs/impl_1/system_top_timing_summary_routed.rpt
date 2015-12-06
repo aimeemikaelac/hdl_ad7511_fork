@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date         : Sat Dec  5 18:54:28 2015
+| Date         : Sat Dec  5 20:53:42 2015
 | Host         : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 | Command      : report_timing_summary -warn_on_violation -file system_top_timing_summary_routed.rpt -pb system_top_timing_summary_routed.pb
 | Design       : system_top
@@ -130,7 +130,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      0.546        0.000                      0                14486        0.020        0.000                      0                14486        2.387        0.000                       0                  6224  
+      0.809        0.000                      0                14430        0.025        0.000                      0                14430        2.387        0.000                       0                  6198  
 
 
 All user specified timing constraints are met.
@@ -160,13 +160,13 @@ i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_in1  {0.000 2.500}        5.
 
 Clock                                                        WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                                                        -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-clk_fpga_0                                                     1.322        0.000                      0                11803        0.020        0.000                      0                11803        2.500        0.000                       0                  5184  
+clk_fpga_0                                                     1.534        0.000                      0                11747        0.025        0.000                      0                11747        2.500        0.000                       0                  5158  
 clk_fpga_1                                                                                                                                                                                                 2.845        0.000                       0                     4  
-  mmcm_clk_0_s                                                 0.546        0.000                      0                 1542        0.044        0.000                      0                 1542        2.387        0.000                       0                   997  
+  mmcm_clk_0_s                                                 0.809        0.000                      0                 1542        0.143        0.000                      0                 1542        2.387        0.000                       0                   997  
   mmcm_clk_1_s                                                                                                                                                                                             5.486        0.000                       0                     1  
   mmcm_fb_clk_s                                                                                                                                                                                           45.000        0.000                       0                     3  
 i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_in1                                                                                                                                                    3.751        0.000                       0                     3  
-  clk_out1_system_sys_audio_clkgen_0_1                        78.631        0.000                      0                   46        0.112        0.000                      0                   46       39.440        0.000                       0                    33  
+  clk_out1_system_sys_audio_clkgen_0_1                        78.471        0.000                      0                   46        0.037        0.000                      0                   46       39.440        0.000                       0                    33  
   clkfbout_system_sys_audio_clkgen_0_1                                                                                                                                                                    42.845        0.000                       0                     3  
 
 
@@ -186,7 +186,7 @@ From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS
 
 Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
 ----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
-**async_default**  clk_fpga_0         clk_fpga_0               1.831        0.000                      0                 1095        0.139        0.000                      0                 1095  
+**async_default**  clk_fpga_0         clk_fpga_0               1.837        0.000                      0                 1095        0.359        0.000                      0                 1095  
 
 
 ------------------------------------------------------------------------------------------------
@@ -199,28 +199,28 @@ Path Group         From Clock         To Clock               WNS(ns)      TNS(ns
 From Clock:  clk_fpga_0
   To Clock:  clk_fpga_0
 
-Setup :            0  Failing Endpoints,  Worst Slack        1.322ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.020ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        1.534ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.025ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        2.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             1.322ns  (required time - arrival time)
-  Source:                 i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/FSM_onehot_ap_CS_fsm_reg[11]/C
+Slack (MET) :             1.534ns  (required time - arrival time)
+  Source:                 i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue_reg[0][0]/CE
+  Destination:            i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]/R
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_fpga_0
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        8.204ns  (logic 1.934ns (23.575%)  route 6.270ns (76.425%))
-  Logic Levels:           8  (LUT2=1 LUT3=1 LUT4=1 LUT6=5)
-  Clock Path Skew:        -0.115ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.109ns = ( 14.109 - 10.000 ) 
+  Data Path Delay:        7.788ns  (logic 3.579ns (45.956%)  route 4.209ns (54.044%))
+  Logic Levels:           10  (CARRY4=6 LUT2=1 LUT3=1 LUT5=1 LUT6=1)
+  Clock Path Skew:        0.000ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.164ns = ( 14.164 - 10.000 ) 
     Source Clock Delay      (SCD):    4.770ns
-    Clock Pessimism Removal (CPR):    0.546ns
+    Clock Pessimism Removal (CPR):    0.606ns
   Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Total Input Jitter      (TIJ):    0.300ns
@@ -234,28 +234,38 @@ Slack (MET) :             1.322ns  (required time - arrival time)
     PS7_X0Y0             PS7                          0.000     0.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           2.782     2.782    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     2.883 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        1.887     4.770    i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/aclk
-    SLICE_X28Y137                                                     r  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/FSM_onehot_ap_CS_fsm_reg[11]/C
+                         net (fo=5163, routed)        1.887     4.770    i_system_wrapper/system_i/axi_i2s_adi/U0/S_AXI_ACLK
+    SLICE_X30Y112                                                     r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y137        FDRE (Prop_fdre_C_Q)         0.456     5.226 f  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/FSM_onehot_ap_CS_fsm_reg[11]/Q
-                         net (fo=12, routed)          1.053     6.280    i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/n_4_FSM_onehot_ap_CS_fsm_reg[11]
-    SLICE_X31Y137        LUT6 (Prop_lut6_I0_O)        0.124     6.404 f  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/priorityOut_V[3]_INST_0_i_22/O
-                         net (fo=1, routed)           0.437     6.841    i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/n_4_priorityOut_V[3]_INST_0_i_22
-    SLICE_X31Y136        LUT6 (Prop_lut6_I3_O)        0.124     6.965 f  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/priorityOut_V[3]_INST_0_i_9/O
-                         net (fo=13, routed)          1.013     7.977    i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/ap_CS_fsm_reg[0]
-    SLICE_X34Y133        LUT2 (Prop_lut2_I0_O)        0.150     8.127 f  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/priorityOut_V[3]_INST_0_i_13/O
-                         net (fo=10, routed)          0.959     9.086    i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/n_4_priorityOut_V[3]_INST_0_i_13
-    SLICE_X31Y133        LUT4 (Prop_lut4_I1_O)        0.376     9.462 f  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/priorityOut_V[1]_INST_0_i_2/O
-                         net (fo=1, routed)           0.571    10.033    i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/random_priorities_U/runQueue_random_priorities_rom_U/I2
-    SLICE_X33Y133        LUT6 (Prop_lut6_I3_O)        0.332    10.365 f  i_system_wrapper/system_i/runQueue_0/inst/runQueue_U/random_priorities_U/runQueue_random_priorities_rom_U/priorityOut_V[1]_INST_0/O
-                         net (fo=5, routed)           0.817    11.182    i_system_wrapper/system_i/pqueue_0/inst/in[1]
-    SLICE_X33Y128        LUT6 (Prop_lut6_I3_O)        0.124    11.306 r  i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue[0][3]_i_5/O
-                         net (fo=4, routed)           0.523    11.829    i_system_wrapper/system_i/pqueue_0/inst/n_4_slot[0].queue[0][3]_i_5
-    SLICE_X32Y128        LUT3 (Prop_lut3_I0_O)        0.124    11.953 r  i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue[0][3]_i_3/O
-                         net (fo=1, routed)           0.566    12.519    i_system_wrapper/system_i/pqueue_0/inst/p_0_in
-    SLICE_X35Y128        LUT6 (Prop_lut6_I0_O)        0.124    12.643 r  i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue[0][3]_i_1/O
-                         net (fo=4, routed)           0.331    12.974    i_system_wrapper/system_i/pqueue_0/inst/n_4_slot[0].queue[0][3]_i_1
-    SLICE_X35Y127        FDRE                                         r  i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue_reg[0][0]/CE
+    SLICE_X30Y112        FDRE (Prop_fdre_C_Q)         0.518     5.288 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]/Q
+                         net (fo=2, routed)           0.484     5.773    i_system_wrapper/system_i/axi_i2s_adi/U0/data3[1]
+    SLICE_X29Y112        CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.674     6.447 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[3]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.447    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt_reg[3]_i_3
+    SLICE_X29Y113        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.561 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[7]_i_3/CO[3]
+                         net (fo=1, routed)           0.000     6.561    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt_reg[7]_i_3
+    SLICE_X29Y114        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.334     6.895 f  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[11]_i_3/O[1]
+                         net (fo=7, routed)           0.901     7.795    i_system_wrapper/system_i/axi_i2s_adi/U0/n_10_cnt_reg[11]_i_3
+    SLICE_X29Y117        LUT2 (Prop_lut2_I1_O)        0.303     8.098 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt[15]_i_54/O
+                         net (fo=1, routed)           0.000     8.098    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt[15]_i_54
+    SLICE_X29Y117        CARRY4 (Prop_carry4_S[0]_CO[3])
+                                                      0.532     8.630 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[15]_i_38/CO[3]
+                         net (fo=1, routed)           0.000     8.630    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt_reg[15]_i_38
+    SLICE_X29Y118        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.744 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[15]_i_35/CO[3]
+                         net (fo=1, routed)           0.000     8.744    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt_reg[15]_i_35
+    SLICE_X29Y119        CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     8.858 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[15]_i_11/CO[3]
+                         net (fo=46, routed)          0.865     9.724    i_system_wrapper/system_i/axi_i2s_adi/U0/cnt5
+    SLICE_X27Y114        LUT3 (Prop_lut3_I1_O)        0.425    10.149 f  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt[15]_i_16/O
+                         net (fo=1, routed)           0.674    10.823    i_system_wrapper/system_i/axi_i2s_adi/U0/in[7]
+    SLICE_X27Y114        LUT6 (Prop_lut6_I0_O)        0.327    11.150 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt[15]_i_5/O
+                         net (fo=1, routed)           0.590    11.740    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt[15]_i_5
+    SLICE_X26Y115        LUT5 (Prop_lut5_I2_O)        0.124    11.864 r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt[15]_i_1/O
+                         net (fo=16, routed)          0.694    12.558    i_system_wrapper/system_i/axi_i2s_adi/U0/n_4_cnt[15]_i_1
+    SLICE_X30Y112        FDRE                                         r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]/R
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -263,16 +273,16 @@ Slack (MET) :             1.322ns  (required time - arrival time)
     PS7_X0Y0             PS7                          0.000    10.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           2.378    12.378    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    12.469 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        1.640    14.109    i_system_wrapper/system_i/pqueue_0/inst/clock
-    SLICE_X35Y127                                                     r  i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue_reg[0][0]/C
-                         clock pessimism              0.546    14.655    
-                         clock uncertainty           -0.154    14.501    
-    SLICE_X35Y127        FDRE (Setup_fdre_C_CE)      -0.205    14.296    i_system_wrapper/system_i/pqueue_0/inst/slot[0].queue_reg[0][0]
+                         net (fo=5163, routed)        1.695    14.164    i_system_wrapper/system_i/axi_i2s_adi/U0/S_AXI_ACLK
+    SLICE_X30Y112                                                     r  i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]/C
+                         clock pessimism              0.606    14.770    
+                         clock uncertainty           -0.154    14.616    
+    SLICE_X30Y112        FDRE (Setup_fdre_C_R)       -0.524    14.092    i_system_wrapper/system_i/axi_i2s_adi/U0/cnt_reg[1]
   -------------------------------------------------------------------
-                         required time                         14.296    
-                         arrival time                         -12.974    
+                         required time                         14.092    
+                         arrival time                         -12.558    
   -------------------------------------------------------------------
-                         slack                                  1.322    
+                         slack                                  1.534    
 
 
 
@@ -280,19 +290,19 @@ Slack (MET) :             1.322ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.020ns  (arrival time - required time)
-  Source:                 i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/IIC_CONTROL_I/data_i2c_i_reg[1]/C
+Slack (MET) :             0.025ns  (arrival time - required time)
+  Source:                 i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[5]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/READ_FIFO_I/FIFO_RAM[6].SRL16E_I/D
-                            (rising edge-triggered cell SRL16E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             clk_fpga_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        0.310ns  (logic 0.164ns (52.841%)  route 0.146ns (47.159%))
+  Data Path Delay:        0.321ns  (logic 0.141ns (43.902%)  route 0.180ns (56.098%))
   Logic Levels:           0  
   Clock Path Skew:        0.181ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.197ns
-    Source Clock Delay      (SCD):    1.833ns
+    Destination Clock Delay (DCD):    2.216ns
+    Source Clock Delay      (SCD):    1.852ns
     Clock Pessimism Removal (CPR):    0.183ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -302,12 +312,12 @@ Slack (MET) :             0.020ns  (arrival time - required time)
     PS7_X0Y0             PS7                          0.000     0.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.168     1.168    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.194 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        0.639     1.833    i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/IIC_CONTROL_I/s_axi_aclk
-    SLICE_X46Y100                                                     r  i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/IIC_CONTROL_I/data_i2c_i_reg[1]/C
+                         net (fo=5163, routed)        0.658     1.852    i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/aclk
+    SLICE_X29Y104                                                     r  i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[5]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X46Y100        FDRE (Prop_fdre_C_Q)         0.164     1.997 r  i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/IIC_CONTROL_I/data_i2c_i_reg[1]/Q
-                         net (fo=1, routed)           0.146     2.144    i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/READ_FIFO_I/O17[1]
-    SLICE_X46Y99         SRL16E                                       r  i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/READ_FIFO_I/FIFO_RAM[6].SRL16E_I/D
+    SLICE_X29Y104        FDRE (Prop_fdre_C_Q)         0.141     1.993 r  i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/r_arid_r_reg[5]/Q
+                         net (fo=1, routed)           0.180     2.174    i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/in[6]
+    SLICE_X26Y99         SRLC32E                                      r  i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -315,16 +325,16 @@ Slack (MET) :             0.020ns  (arrival time - required time)
     PS7_X0Y0             PS7                          0.000     0.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.343     1.343    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.372 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        0.825     2.197    i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/READ_FIFO_I/s_axi_aclk
-    SLICE_X46Y99                                                      r  i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/READ_FIFO_I/FIFO_RAM[6].SRL16E_I/CLK
-                         clock pessimism             -0.183     2.014    
-    SLICE_X46Y99         SRL16E (Hold_srl16e_CLK_D)
-                                                      0.109     2.123    i_system_wrapper/system_i/axi_iic_main/U0/X_IIC/READ_FIFO_I/FIFO_RAM[6].SRL16E_I
+                         net (fo=5163, routed)        0.844     2.216    i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/aclk
+    SLICE_X26Y99                                                      r  i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/CLK
+                         clock pessimism             -0.183     2.033    
+    SLICE_X26Y99         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.115     2.148    i_system_wrapper/system_i/axi_cpu_interconnect/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32
   -------------------------------------------------------------------
-                         required time                         -2.123    
-                         arrival time                           2.144    
+                         required time                         -2.148    
+                         arrival time                           2.174    
   -------------------------------------------------------------------
-                         slack                                  0.020    
+                         slack                                  0.025    
 
 
 
@@ -371,28 +381,28 @@ Max Period  n/a     MMCME2_ADV/CLKIN1  n/a            100.000   5.000   95.000  
 From Clock:  mmcm_clk_0_s
   To Clock:  mmcm_clk_0_s
 
-Setup :            0  Failing Endpoints,  Worst Slack        0.546ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.044ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        0.809ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.143ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        2.387ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.546ns  (required time - arrival time)
-  Source:                 i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[130]/C
+Slack (MET) :             0.809ns  (required time - arrival time)
+  Source:                 i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[134]/C
                             (rising edge-triggered cell FDRE clocked by mmcm_clk_0_s  {rise@0.000ns fall@3.367ns period=6.735ns})
-  Destination:            i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[0]/R
+  Destination:            i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[12]/R
                             (rising edge-triggered cell FDRE clocked by mmcm_clk_0_s  {rise@0.000ns fall@3.367ns period=6.735ns})
   Path Group:             mmcm_clk_0_s
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            6.735ns  (mmcm_clk_0_s rise@6.735ns - mmcm_clk_0_s rise@0.000ns)
-  Data Path Delay:        5.548ns  (logic 2.848ns (51.335%)  route 2.700ns (48.665%))
-  Logic Levels:           8  (CARRY4=5 LUT1=1 LUT2=1 LUT4=1)
-  Clock Path Skew:        -0.064ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    3.913ns = ( 10.648 - 6.735 ) 
-    Source Clock Delay      (SCD):    4.486ns
-    Clock Pessimism Removal (CPR):    0.508ns
+  Data Path Delay:        5.324ns  (logic 2.740ns (51.462%)  route 2.584ns (48.538%))
+  Logic Levels:           7  (CARRY4=4 LUT1=1 LUT2=1 LUT4=1)
+  Clock Path Skew:        -0.025ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    3.918ns = ( 10.653 - 6.735 ) 
+    Source Clock Delay      (SCD):    4.487ns
+    Clock Pessimism Removal (CPR):    0.543ns
   Clock Uncertainty:      0.147ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.286ns
@@ -410,33 +420,30 @@ Slack (MET) :             0.546ns  (required time - arrival time)
                                                      -3.715     0.816 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm/CLKOUT0
                          net (fo=1, routed)           1.855     2.671    i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.101     2.772 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_clk_0_bufg/O
-                         net (fo=995, routed)         1.714     4.486    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_clk
-    SLICE_X66Y87                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[130]/C
+                         net (fo=995, routed)         1.715     4.487    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_clk
+    SLICE_X62Y90                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[134]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X66Y87         FDRE (Prop_fdre_C_Q)         0.478     4.964 f  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[130]/Q
-                         net (fo=2, routed)           0.598     5.561    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/O7[113]
-    SLICE_X64Y87         LUT1 (Prop_lut1_I0_O)        0.295     5.856 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_hs_count[0]_i_38/O
-                         net (fo=1, routed)           0.000     5.856    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/I13[2]
-    SLICE_X64Y87         CARRY4 (Prop_carry4_S[2]_CO[3])
-                                                      0.398     6.254 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_24/CO[3]
-                         net (fo=1, routed)           0.000     6.254    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_24
-    SLICE_X64Y88         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     6.368 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_23/CO[3]
-                         net (fo=1, routed)           0.000     6.368    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_23
-    SLICE_X64Y89         CARRY4 (Prop_carry4_CI_CO[3])
-                                                      0.114     6.482 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_22/CO[3]
-                         net (fo=1, routed)           0.000     6.482    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_22
-    SLICE_X64Y90         CARRY4 (Prop_carry4_CI_O[3])
-                                                      0.313     6.795 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_21/O[3]
-                         net (fo=2, routed)           0.874     7.670    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hl_width_s[15]
-    SLICE_X64Y86         LUT4 (Prop_lut4_I0_O)        0.306     7.976 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count[0]_i_8/O
-                         net (fo=1, routed)           0.000     7.976    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count[0]_i_8
-    SLICE_X64Y86         CARRY4 (Prop_carry4_S[3]_CO[3])
-                                                      0.401     8.377 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_1/CO[3]
-                         net (fo=33, routed)          0.515     8.892    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_1
-    SLICE_X61Y87         LUT2 (Prop_lut2_I1_O)        0.429     9.321 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count[0]_i_1/O
-                         net (fo=16, routed)          0.713    10.034    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_vs_count[0]_i_1
-    SLICE_X60Y83         FDRE                                         r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[0]/R
+    SLICE_X62Y90         FDRE (Prop_fdre_C_Q)         0.478     4.965 f  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[134]/Q
+                         net (fo=2, routed)           0.690     5.655    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/O7[117]
+    SLICE_X64Y86         LUT1 (Prop_lut1_I0_O)        0.301     5.956 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_hs_count[0]_i_34/O
+                         net (fo=1, routed)           0.000     5.956    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/I14[2]
+    SLICE_X64Y86         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.398     6.354 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_23/CO[3]
+                         net (fo=1, routed)           0.000     6.354    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_23
+    SLICE_X64Y87         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     6.468 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_22/CO[3]
+                         net (fo=1, routed)           0.000     6.468    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_22
+    SLICE_X64Y88         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.313     6.781 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_21/O[3]
+                         net (fo=2, routed)           0.777     7.558    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hl_width_s[15]
+    SLICE_X63Y87         LUT4 (Prop_lut4_I0_O)        0.306     7.864 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count[0]_i_8/O
+                         net (fo=1, routed)           0.000     7.864    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count[0]_i_8
+    SLICE_X63Y87         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     8.265 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_hs_count_reg[0]_i_1/CO[3]
+                         net (fo=33, routed)          0.474     8.739    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_hs_count_reg[0]_i_1
+    SLICE_X61Y88         LUT2 (Prop_lut2_I1_O)        0.429     9.168 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count[0]_i_1/O
+                         net (fo=16, routed)          0.643     9.811    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/n_4_hdmi_vs_count[0]_i_1
+    SLICE_X60Y89         FDRE                                         r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[12]/R
   -------------------------------------------------------------------    -------------------
 
                          (clock mmcm_clk_0_s rise edge)
@@ -449,16 +456,16 @@ Slack (MET) :             0.546ns  (required time - arrival time)
                                                      -3.349     7.330 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm/CLKOUT0
                          net (fo=1, routed)           1.691     9.021    i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091     9.112 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_clk_0_bufg/O
-                         net (fo=995, routed)         1.536    10.648    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_clk
-    SLICE_X60Y83                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[0]/C
-                         clock pessimism              0.508    11.156    
-                         clock uncertainty           -0.147    11.009    
-    SLICE_X60Y83         FDRE (Setup_fdre_C_R)       -0.429    10.580    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[0]
+                         net (fo=995, routed)         1.541    10.653    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_clk
+    SLICE_X60Y89                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[12]/C
+                         clock pessimism              0.543    11.196    
+                         clock uncertainty           -0.147    11.049    
+    SLICE_X60Y89         FDRE (Setup_fdre_C_R)       -0.429    10.620    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_count_reg[12]
   -------------------------------------------------------------------
-                         required time                         10.580    
-                         arrival time                         -10.034    
+                         required time                         10.620    
+                         arrival time                          -9.811    
   -------------------------------------------------------------------
-                         slack                                  0.546    
+                         slack                                  0.809    
 
 
 
@@ -466,20 +473,20 @@ Slack (MET) :             0.546ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.044ns  (arrival time - required time)
-  Source:                 i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[184]/C
+Slack (MET) :             0.143ns  (arrival time - required time)
+  Source:                 i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_status_reg/C
                             (rising edge-triggered cell FDRE clocked by mmcm_clk_0_s  {rise@0.000ns fall@3.367ns period=6.735ns})
-  Destination:            i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_data_reg[18]/D
+  Destination:            i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/d_acc_data_reg[1]/D
                             (rising edge-triggered cell FDRE clocked by mmcm_clk_0_s  {rise@0.000ns fall@3.367ns period=6.735ns})
   Path Group:             mmcm_clk_0_s
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (mmcm_clk_0_s rise@0.000ns - mmcm_clk_0_s rise@0.000ns)
-  Data Path Delay:        0.394ns  (logic 0.186ns (47.221%)  route 0.208ns (52.779%))
-  Logic Levels:           1  (LUT5=1)
-  Clock Path Skew:        0.259ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.134ns
-    Source Clock Delay      (SCD):    1.701ns
-    Clock Pessimism Removal (CPR):    0.173ns
+  Data Path Delay:        0.277ns  (logic 0.186ns (67.123%)  route 0.091ns (32.877%))
+  Logic Levels:           1  (LUT3=1)
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.157ns
+    Source Clock Delay      (SCD):    1.720ns
+    Clock Pessimism Removal (CPR):    0.423ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -493,14 +500,14 @@ Slack (MET) :             0.044ns  (arrival time - required time)
                                                      -1.122     0.608 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm/CLKOUT0
                          net (fo=1, routed)           0.518     1.126    i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.152 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_clk_0_bufg/O
-                         net (fo=995, routed)         0.550     1.701    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_clk
-    SLICE_X49Y81                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[184]/C
+                         net (fo=995, routed)         0.569     1.720    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_clk
+    SLICE_X59Y78                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_status_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X49Y81         FDRE (Prop_fdre_C_Q)         0.141     1.842 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/d_data_cntrl_reg[184]/Q
-                         net (fo=25, routed)          0.208     2.050    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_srcsel_s[0]
-    SLICE_X53Y82         LUT5 (Prop_lut5_I3_O)        0.045     2.095 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/hdmi_data[18]_i_1/O
-                         net (fo=1, routed)           0.000     2.095    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/D[18]
-    SLICE_X53Y82         FDRE                                         r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_data_reg[18]/D
+    SLICE_X59Y78         FDRE (Prop_fdre_C_Q)         0.141     1.861 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_status_reg/Q
+                         net (fo=1, routed)           0.091     1.953    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/hdmi_status_s
+    SLICE_X58Y78         LUT3 (Prop_lut3_I0_O)        0.045     1.998 r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/d_acc_data[1]_i_1__0/O
+                         net (fo=1, routed)           0.000     1.998    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/d_acc_data[1]
+    SLICE_X58Y78         FDRE                                         r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/d_acc_data_reg[1]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock mmcm_clk_0_s rise edge)
@@ -513,15 +520,15 @@ Slack (MET) :             0.044ns  (arrival time - required time)
                                                      -1.437     0.727 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm/CLKOUT0
                          net (fo=1, routed)           0.564     1.291    i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.029     1.320 r  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_clk_0_bufg/O
-                         net (fo=995, routed)         0.814     2.134    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_clk
-    SLICE_X53Y82                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_data_reg[18]/C
-                         clock pessimism             -0.173     1.961    
-    SLICE_X53Y82         FDRE (Hold_fdre_C_D)         0.091     2.052    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_data_reg[18]
+                         net (fo=995, routed)         0.837     2.157    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/hdmi_clk
+    SLICE_X58Y78                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/d_acc_data_reg[1]/C
+                         clock pessimism             -0.423     1.733    
+    SLICE_X58Y78         FDRE (Hold_fdre_C_D)         0.121     1.854    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_status/d_acc_data_reg[1]
   -------------------------------------------------------------------
-                         required time                         -2.052    
-                         arrival time                           2.095    
+                         required time                         -1.854    
+                         arrival time                           1.998    
   -------------------------------------------------------------------
-                         slack                                  0.044    
+                         slack                                  0.143    
 
 
 
@@ -535,10 +542,10 @@ Period:             6.735
 Sources:            { i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm/CLKOUT0 }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required  Actual  Slack    Location         Pin
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576     6.735   4.159    RAMB36_X2Y16     i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_mem/m_ram_reg/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576     6.735   4.159    RAMB36_X2Y15     i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_mem/m_ram_reg/CLKARDCLK
 Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360   6.735   206.625  MMCME2_ADV_X0Y0  i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/i_mmcm/CLKOUT0
-Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980     3.367   2.387    SLICE_X112Y74    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_add_c4/p3_ddata_reg[0]_srl6/CLK
-High Pulse Width  Fast    SRL16E/CLK          n/a            0.980     3.367   2.387    SLICE_X82Y77     i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/hdmi_vs_2d_reg_srl3/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980     3.367   2.387    SLICE_X112Y74    i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_ss_444to422/s444_sync_3d_reg[0]_srl3/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980     3.367   2.387    SLICE_X90Y85     i_system_wrapper/system_i/axi_hdmi_core/inst/i_tx_core/i_csc_RGB2CrYCb/i_csc_1_Cr/i_add_c4/p3_ddata_reg[0]_srl6/CLK
 
 
 
@@ -615,15 +622,15 @@ Max Period  n/a     MMCME2_ADV/CLKIN1    n/a            100.000   5.000   95.000
 From Clock:  clk_out1_system_sys_audio_clkgen_0_1
   To Clock:  clk_out1_system_sys_audio_clkgen_0_1
 
-Setup :            0  Failing Endpoints,  Worst Slack       78.631ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.112ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack       78.471ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.037ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack       39.440ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             78.631ns  (required time - arrival time)
+Slack (MET) :             78.471ns  (required time - arrival time)
   Source:                 i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/rd_addr_reg[1]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_system_sys_audio_clkgen_0_1  {rise@0.000ns fall@40.690ns period=81.380ns})
   Destination:            i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]/D
@@ -631,12 +638,12 @@ Slack (MET) :             78.631ns  (required time - arrival time)
   Path Group:             clk_out1_system_sys_audio_clkgen_0_1
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            81.380ns  (clk_out1_system_sys_audio_clkgen_0_1 rise@81.380ns - clk_out1_system_sys_audio_clkgen_0_1 rise@0.000ns)
-  Data Path Delay:        2.304ns  (logic 0.746ns (32.382%)  route 1.558ns (67.618%))
+  Data Path Delay:        2.393ns  (logic 0.746ns (31.173%)  route 1.647ns (68.827%))
   Logic Levels:           1  (RAMD32=1)
-  Clock Path Skew:        -0.026ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    1.521ns = ( 82.901 - 81.380 ) 
-    Source Clock Delay      (SCD):    1.696ns
-    Clock Pessimism Removal (CPR):    0.149ns
+  Clock Path Skew:        -0.063ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    1.516ns = ( 82.896 - 81.380 ) 
+    Source Clock Delay      (SCD):    1.693ns
+    Clock Pessimism Removal (CPR):    0.114ns
   Clock Uncertainty:      0.168ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
     Discrete Jitter          (DJ):    0.328ns
@@ -652,15 +659,15 @@ Slack (MET) :             78.631ns  (required time - arrival time)
                                                      -3.793    -1.987 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.889    -0.098    i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1_system_sys_audio_clkgen_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.101     0.003 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf/O
-                         net (fo=32, routed)          1.693     1.696    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/DATA_CLK_I
-    SLICE_X31Y82                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/rd_addr_reg[1]/C
+                         net (fo=32, routed)          1.690     1.693    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/DATA_CLK_I
+    SLICE_X28Y80                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/rd_addr_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X31Y82         FDRE (Prop_fdre_C_Q)         0.419     2.115 r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/rd_addr_reg[1]/Q
-                         net (fo=7, routed)           1.033     3.148    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/fifo_reg_0_3_0_4/ADDRB1
-    SLICE_X30Y82         RAMD32 (Prop_ramd32_RADR1_O)
-                                                      0.327     3.475 r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/fifo_reg_0_3_0_4/RAMB/O
-                         net (fo=1, routed)           0.524     4.000    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data0[2]
-    SLICE_X30Y81         FDRE                                         r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]/D
+    SLICE_X28Y80         FDRE (Prop_fdre_C_Q)         0.419     2.112 r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/rd_addr_reg[1]/Q
+                         net (fo=7, routed)           1.030     3.142    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/fifo_reg_0_3_0_4/ADDRB1
+    SLICE_X26Y80         RAMD32 (Prop_ramd32_RADR1_O)
+                                                      0.327     3.469 r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/fifo_reg_0_3_0_4/RAMB/O
+                         net (fo=1, routed)           0.617     4.086    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data0[2]
+    SLICE_X27Y80         FDRE                                         r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]/D
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_system_sys_audio_clkgen_0_1 rise edge)
@@ -671,16 +678,16 @@ Slack (MET) :             78.631ns  (required time - arrival time)
                                                      -3.425    79.567 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           1.725    81.292    i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1_system_sys_audio_clkgen_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.091    81.383 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf/O
-                         net (fo=32, routed)          1.518    82.901    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/DATA_CLK_I
-    SLICE_X30Y81                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]/C
-                         clock pessimism              0.149    83.050    
-                         clock uncertainty           -0.168    82.883    
-    SLICE_X30Y81         FDRE (Setup_fdre_C_D)       -0.252    82.631    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]
+                         net (fo=32, routed)          1.513    82.896    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/DATA_CLK_I
+    SLICE_X27Y80                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]/C
+                         clock pessimism              0.114    83.010    
+                         clock uncertainty           -0.168    82.843    
+    SLICE_X27Y80         FDRE (Setup_fdre_C_D)       -0.285    82.558    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/tx_sync/out_data_reg[2]
   -------------------------------------------------------------------
-                         required time                         82.631    
-                         arrival time                          -4.000    
+                         required time                         82.558    
+                         arrival time                          -4.086    
   -------------------------------------------------------------------
-                         slack                                 78.631    
+                         slack                                 78.471    
 
 
 
@@ -688,20 +695,20 @@ Slack (MET) :             78.631ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.112ns  (arrival time - required time)
-  Source:                 i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/wr_addr_reg[1]/C
+Slack (MET) :             0.037ns  (arrival time - required time)
+  Source:                 i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_sync_fifo_in_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_out1_system_sys_audio_clkgen_0_1  {rise@0.000ns fall@40.690ns period=81.380ns})
-  Destination:            i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/WADR1
+  Destination:            i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/I
                             (rising edge-triggered cell RAMD32 clocked by clk_out1_system_sys_audio_clkgen_0_1  {rise@0.000ns fall@40.690ns period=81.380ns})
   Path Group:             clk_out1_system_sys_audio_clkgen_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_system_sys_audio_clkgen_0_1 rise@0.000ns - clk_out1_system_sys_audio_clkgen_0_1 rise@0.000ns)
-  Data Path Delay:        0.452ns  (logic 0.141ns (31.178%)  route 0.311ns (68.822%))
+  Data Path Delay:        0.197ns  (logic 0.141ns (71.611%)  route 0.056ns (28.389%))
   Logic Levels:           0  
-  Clock Path Skew:        0.031ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    0.835ns
-    Source Clock Delay      (SCD):    0.570ns
-    Clock Pessimism Removal (CPR):    0.234ns
+  Clock Path Skew:        0.013ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.834ns
+    Source Clock Delay      (SCD):    0.567ns
+    Clock Pessimism Removal (CPR):    0.254ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -713,12 +720,12 @@ Slack (MET) :             0.112ns  (arrival time - required time)
                                                      -1.149    -0.553 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.529    -0.024    i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1_system_sys_audio_clkgen_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.026     0.002 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf/O
-                         net (fo=32, routed)          0.568     0.570    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/DATA_CLK_I
-    SLICE_X28Y78                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/wr_addr_reg[1]/C
+                         net (fo=32, routed)          0.565     0.567    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/DATA_CLK_I
+    SLICE_X27Y77                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_sync_fifo_in_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X28Y78         FDRE (Prop_fdre_C_Q)         0.141     0.711 r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/wr_addr_reg[1]/Q
-                         net (fo=9, routed)           0.311     1.022    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/ADDRD1
-    SLICE_X26Y78         RAMD32                                       r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/WADR1
+    SLICE_X27Y77         FDRE (Prop_fdre_C_Q)         0.141     0.708 r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_sync_fifo_in_reg[0]/Q
+                         net (fo=1, routed)           0.056     0.764    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/DIA0
+    SLICE_X26Y77         RAMD32                                       r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/I
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_out1_system_sys_audio_clkgen_0_1 rise edge)
@@ -729,16 +736,16 @@ Slack (MET) :             0.112ns  (arrival time - required time)
                                                      -1.467    -0.603 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/mmcm_adv_inst/CLKOUT0
                          net (fo=1, routed)           0.576    -0.027    i_system_wrapper/system_i/sys_audio_clkgen/inst/clk_out1_system_sys_audio_clkgen_0
     BUFGCTRL_X0Y1        BUFG (Prop_bufg_I_O)         0.029     0.002 r  i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf/O
-                         net (fo=32, routed)          0.833     0.835    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/WCLK
-    SLICE_X26Y78                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/CLK
-                         clock pessimism             -0.234     0.601    
-    SLICE_X26Y78         RAMD32 (Hold_ramd32_CLK_WADR1)
-                                                      0.309     0.910    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA
+                         net (fo=32, routed)          0.832     0.834    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/WCLK
+    SLICE_X26Y77                                                      r  i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/CLK
+                         clock pessimism             -0.254     0.580    
+    SLICE_X26Y77         RAMD32 (Hold_ramd32_CLK_I)
+                                                      0.147     0.727    i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA
   -------------------------------------------------------------------
-                         required time                         -0.910    
-                         arrival time                           1.022    
+                         required time                         -0.727    
+                         arrival time                           0.764    
   -------------------------------------------------------------------
-                         slack                                  0.112    
+                         slack                                  0.037    
 
 
 
@@ -754,8 +761,8 @@ Sources:            { i_system_wrapper/system_i/sys_audio_clkgen/inst/mmcm_adv_i
 Check Type        Corner  Lib Pin             Reference Pin  Required  Actual  Slack    Location         Pin
 Min Period        n/a     BUFG/I              n/a            2.155     81.380  79.225   BUFGCTRL_X0Y1    i_system_wrapper/system_i/sys_audio_clkgen/inst/clkout1_buf/I
 Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360   81.380  131.980  MMCME2_ADV_X1Y0  i_system_wrapper/system_i/sys_audio_clkgen/inst/mmcm_adv_inst/CLKOUT0
-Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     40.690  39.440   SLICE_X26Y78     i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     40.690  39.440   SLICE_X26Y78     i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250     40.690  39.440   SLICE_X26Y77     i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250     40.690  39.440   SLICE_X26Y77     i_system_wrapper/system_i/axi_i2s_adi/U0/ctrl/rx_gen.rx_sync/fifo_reg_0_3_0_4/RAMA/CLK
 
 
 
@@ -787,26 +794,26 @@ Path Group:  **async_default**
 From Clock:  clk_fpga_0
   To Clock:  clk_fpga_0
 
-Setup :            0  Failing Endpoints,  Worst Slack        1.831ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        0.139ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        1.837ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.359ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             1.831ns  (required time - arrival time)
+Slack (MET) :             1.837ns  (required time - arrival time)
   Source:                 i_system_wrapper/system_i/sys_rstgen/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C
                             (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/up_he_max_reg[14]/CLR
+  Destination:            i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_rdata_int_d_reg[7]/CLR
                             (recovery check against rising-edge clock clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             **async_default**
   Path Type:              Recovery (Max at Slow Process Corner)
   Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        7.204ns  (logic 0.580ns (8.051%)  route 6.624ns (91.949%))
+  Data Path Delay:        7.454ns  (logic 0.580ns (7.781%)  route 6.874ns (92.219%))
   Logic Levels:           1  (LUT1=1)
-  Clock Path Skew:        -0.405ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    3.930ns = ( 13.930 - 10.000 ) 
-    Source Clock Delay      (SCD):    4.763ns
+  Clock Path Skew:        -0.149ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.005ns = ( 14.005 - 10.000 ) 
+    Source Clock Delay      (SCD):    4.582ns
     Clock Pessimism Removal (CPR):    0.428ns
   Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -821,14 +828,14 @@ Slack (MET) :             1.831ns  (required time - arrival time)
     PS7_X0Y0             PS7                          0.000     0.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           2.782     2.782    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     2.883 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        1.880     4.763    i_system_wrapper/system_i/sys_rstgen/U0/slowest_sync_clk
-    SLICE_X27Y115                                                     r  i_system_wrapper/system_i/sys_rstgen/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C
+                         net (fo=5163, routed)        1.699     4.582    i_system_wrapper/system_i/sys_rstgen/U0/slowest_sync_clk
+    SLICE_X28Y54                                                      r  i_system_wrapper/system_i/sys_rstgen/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X27Y115        FDRE (Prop_fdre_C_Q)         0.456     5.219 r  i_system_wrapper/system_i/sys_rstgen/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/Q
-                         net (fo=117, routed)         5.253    10.473    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/s_axi_aresetn
-    SLICE_X56Y80         LUT1 (Prop_lut1_I0_O)        0.124    10.597 f  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/i_hdmi_xfer_cntrl/up_wdata[31]_i_1/O
-                         net (fo=110, routed)         1.371    11.967    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/O18
-    SLICE_X52Y86         FDCE                                         f  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/up_he_max_reg[14]/CLR
+    SLICE_X28Y54         FDRE (Prop_fdre_C_Q)         0.456     5.038 r  i_system_wrapper/system_i/sys_rstgen/U0/ACTIVE_LOW_PR_OUT_DFF[0].peripheral_aresetn_reg[0]/Q
+                         net (fo=117, routed)         5.500    10.538    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/s_axi_aresetn
+    SLICE_X50Y93         LUT1 (Prop_lut1_I0_O)        0.124    10.662 f  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_axi_rvalid_i_2/O
+                         net (fo=66, routed)          1.374    12.037    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/n_4_up_axi_rvalid_i_2
+    SLICE_X56Y92         FDCE                                         f  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_rdata_int_d_reg[7]/CLR
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -836,16 +843,16 @@ Slack (MET) :             1.831ns  (required time - arrival time)
     PS7_X0Y0             PS7                          0.000    10.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           2.378    12.378    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    12.469 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        1.461    13.930    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/s_axi_aclk
-    SLICE_X52Y86                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/up_he_max_reg[14]/C
-                         clock pessimism              0.428    14.358    
-                         clock uncertainty           -0.154    14.204    
-    SLICE_X52Y86         FDCE (Recov_fdce_C_CLR)     -0.405    13.799    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up/up_he_max_reg[14]
+                         net (fo=5163, routed)        1.536    14.005    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/s_axi_aclk
+    SLICE_X56Y92                                                      r  i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_rdata_int_d_reg[7]/C
+                         clock pessimism              0.428    14.433    
+                         clock uncertainty           -0.154    14.279    
+    SLICE_X56Y92         FDCE (Recov_fdce_C_CLR)     -0.405    13.874    i_system_wrapper/system_i/axi_hdmi_core/inst/i_up_axi/up_rdata_int_d_reg[7]
   -------------------------------------------------------------------
-                         required time                         13.799    
-                         arrival time                         -11.967    
+                         required time                         13.874    
+                         arrival time                         -12.037    
   -------------------------------------------------------------------
-                         slack                                  1.831    
+                         slack                                  1.837    
 
 
 
@@ -853,20 +860,20 @@ Slack (MET) :             1.831ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             0.139ns  (arrival time - required time)
-  Source:                 i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/C
+Slack (MET) :             0.359ns  (arrival time - required time)
+  Source:                 i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/C
                             (rising edge-triggered cell FDPE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
-  Destination:            i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR
+  Destination:            i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR
                             (removal check against rising-edge clock clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
   Path Group:             **async_default**
   Path Type:              Removal (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
-  Data Path Delay:        0.330ns  (logic 0.141ns (42.777%)  route 0.189ns (57.223%))
+  Data Path Delay:        0.283ns  (logic 0.164ns (57.986%)  route 0.119ns (42.014%))
   Logic Levels:           0  
-  Clock Path Skew:        0.282ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    2.231ns
-    Source Clock Delay      (SCD):    1.771ns
-    Clock Pessimism Removal (CPR):    0.178ns
+  Clock Path Skew:        0.016ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    2.230ns
+    Source Clock Delay      (SCD):    1.784ns
+    Clock Pessimism Removal (CPR):    0.430ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -875,12 +882,12 @@ Slack (MET) :             0.139ns  (arrival time - required time)
     PS7_X0Y0             PS7                          0.000     0.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.168     1.168    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     1.194 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        0.577     1.771    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/clk
-    SLICE_X29Y50                                                      r  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/C
+                         net (fo=5163, routed)        0.590     1.784    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/clk
+    SLICE_X30Y46                                                      r  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X29Y50         FDPE (Prop_fdpe_C_Q)         0.141     1.912 f  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/Q
-                         net (fo=10, routed)          0.189     2.101    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/I2[0]
-    SLICE_X29Y49         FDCE                                         f  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/CLR
+    SLICE_X30Y46         FDPE (Prop_fdpe_C_Q)         0.164     1.948 f  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.wr_rst_reg_reg[1]/Q
+                         net (fo=10, routed)          0.119     2.067    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/I2[0]
+    SLICE_X28Y46         FDCE                                         f  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/CLR
   -------------------------------------------------------------------    -------------------
 
                          (clock clk_fpga_0 rise edge)
@@ -888,15 +895,15 @@ Slack (MET) :             0.139ns  (arrival time - required time)
     PS7_X0Y0             PS7                          0.000     0.000 r  i_system_wrapper/system_i/sys_ps7/inst/PS7_i/FCLKCLK[0]
                          net (fo=1, routed)           1.343     1.343    i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.372 r  i_system_wrapper/system_i/sys_ps7/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
-                         net (fo=5189, routed)        0.859     2.231    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/clk
-    SLICE_X29Y49                                                      r  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]/C
-                         clock pessimism             -0.178     2.053    
-    SLICE_X29Y49         FDCE (Remov_fdce_C_CLR)     -0.092     1.961    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[3]
+                         net (fo=5163, routed)        0.858     2.230    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/clk
+    SLICE_X28Y46                                                      r  i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]/C
+                         clock pessimism             -0.430     1.800    
+    SLICE_X28Y46         FDCE (Remov_fdce_C_CLR)     -0.092     1.708    i_system_wrapper/system_i/axi_mem_intercon/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/wpntr/gcc0.gc0.count_d1_reg[0]
   -------------------------------------------------------------------
-                         required time                         -1.961    
-                         arrival time                           2.101    
+                         required time                         -1.708    
+                         arrival time                           2.067    
   -------------------------------------------------------------------
-                         slack                                  0.139    
+                         slack                                  0.359    
 
 
 
