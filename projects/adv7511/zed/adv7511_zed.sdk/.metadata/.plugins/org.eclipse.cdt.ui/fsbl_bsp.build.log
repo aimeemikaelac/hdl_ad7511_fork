@@ -1,4 +1,4 @@
-02:49:17 **** Build of project fsbl_bsp ****
+03:18:07 **** Build of project fsbl_bsp ****
 make -k all 
 Running Make include in ps7_cortexa9_0/libsrc/axivdma_v5_0/src
 make -C ps7_cortexa9_0/libsrc/axivdma_v5_0/src -s include  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
@@ -98,5 +98,5 @@ Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_1/src
 make -C ps7_cortexa9_0/libsrc/xilrsa_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=arm-xilinx-eabi-gcc" "ARCHIVER=arm-xilinx-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g"
 Finished building libraries
 
-02:49:24 Build Finished (took 7s.477ms)
+03:18:14 Build Finished (took 7s.46ms)
 

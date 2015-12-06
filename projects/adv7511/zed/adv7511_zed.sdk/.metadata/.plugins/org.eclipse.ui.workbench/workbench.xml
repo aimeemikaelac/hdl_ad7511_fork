@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="27" version="2.0">
+<workbench progressCount="32" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024"/>
@@ -157,7 +157,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.24950495" ratioLeft="252" ratioRight="758" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottom" ratio="0.75" ratioLeft="480" ratioRight="160" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6048218" ratioLeft="577" ratioRight="377" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
@@ -208,9 +208,11 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/system_top_hw_platform_0/system.hdf"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.sw.MSSEditor" path="/fsbl_bsp/system.mss"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.xilinx.sdk.hw.ui.HwSpecXMLEditor" path="/system_top_hw_platform_0/system.hdf"/>
 </editors>
 <item historyLabel="system.hdf" index="0"/>
-<item active="true" historyLabel="system.mss" index="1"/>
+<item historyLabel="system.mss" index="1"/>
+<item active="true" historyLabel="system.hdf" index="2"/>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>

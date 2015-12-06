@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Sun Dec  6 02:44:29 2015
+| Date             : Sun Dec  6 03:13:23 2015
 | Host             : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 | Command          : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb
 | Design           : system_top
@@ -30,8 +30,8 @@ Table of Contents
 ----------
 
 +--------------------------+-------+
-| Total On-Chip Power (W)  | 1.690 |
-| Dynamic (W)              | 1.533 |
+| Total On-Chip Power (W)  | 1.689 |
+| Dynamic (W)              | 1.532 |
 | Device Static (W)        | 0.157 |
 | Total Off-Chip Power (W) | 0.121 |
 | Effective TJA (C/W)      | 11.5  |
@@ -50,23 +50,23 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.035 |        8 |       --- |             --- |
-| Slice Logic              |     0.003 |    18390 |       --- |             --- |
-|   LUT as Logic           |     0.003 |     7913 |     53200 |           14.87 |
-|   Register               |    <0.001 |     7619 |    106400 |            7.16 |
+| Clocks                   |     0.034 |        8 |       --- |             --- |
+| Slice Logic              |     0.003 |    18403 |       --- |             --- |
+|   LUT as Logic           |     0.003 |     7889 |     53200 |           14.82 |
+|   Register               |    <0.001 |     7667 |    106400 |            7.20 |
 |   LUT as Distributed RAM |    <0.001 |       74 |     17400 |            0.42 |
 |   CARRY4                 |    <0.001 |      422 |     13300 |            3.17 |
 |   LUT as Shift Register  |    <0.001 |      153 |     17400 |            0.87 |
-|   Others                 |     0.000 |      682 |       --- |             --- |
+|   Others                 |     0.000 |      674 |       --- |             --- |
 |   F7/F8 Muxes            |     0.000 |        8 |     53200 |            0.01 |
-| Signals                  |     0.007 |    12915 |       --- |             --- |
+| Signals                  |     0.007 |    12953 |       --- |             --- |
 | Block RAM                |     0.004 |        2 |       140 |            1.42 |
 | MMCM                     |     0.120 |        2 |         4 |           50.00 |
 | DSPs                     |     0.000 |        9 |       220 |            4.09 |
 | I/O                      |     0.055 |       65 |       200 |           32.50 |
 | PS7                      |     1.308 |        1 |       --- |             --- |
 | Static Power             |     0.157 |          |           |                 |
-| Total                    |     1.690 |          |           |                 |
+| Total                    |     1.689 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.065 |       0.050 |      0.015 |
+| Vccint    |       1.000 |     0.064 |       0.049 |      0.015 |
 | Vccaux    |       1.800 |     0.089 |       0.069 |      0.021 |
 | Vcco33    |       3.300 |     0.012 |       0.011 |      0.001 |
 | Vcco25    |       2.500 |     0.007 |       0.006 |      0.001 |
@@ -158,7 +158,7 @@ Table of Contents
 +----------------------------------------------------------------------------------+-----------+
 | Name                                                                             | Power (W) |
 +----------------------------------------------------------------------------------+-----------+
-| system_top                                                                       |     1.533 |
+| system_top                                                                       |     1.532 |
 |   i_iic_mux_scl                                                                  |     0.000 |
 |     g_iobuf[0].i_iobuf                                                           |     0.000 |
 |     g_iobuf[1].i_iobuf                                                           |     0.000 |
@@ -176,7 +176,7 @@ Table of Contents
 |     g_iobuf[16].i_iobuf                                                          |    <0.001 |
 |     g_iobuf[17].i_iobuf                                                          |    <0.001 |
 |     g_iobuf[18].i_iobuf                                                          |    <0.001 |
-|     g_iobuf[19].i_iobuf                                                          |     0.001 |
+|     g_iobuf[19].i_iobuf                                                          |     0.002 |
 |     g_iobuf[1].i_iobuf                                                           |    <0.001 |
 |     g_iobuf[20].i_iobuf                                                          |     0.001 |
 |     g_iobuf[21].i_iobuf                                                          |     0.002 |
@@ -198,10 +198,10 @@ Table of Contents
 |     g_iobuf[7].i_iobuf                                                           |     0.001 |
 |     g_iobuf[8].i_iobuf                                                           |     0.001 |
 |     g_iobuf[9].i_iobuf                                                           |     0.001 |
-|   i_system_wrapper                                                               |     1.478 |
+|   i_system_wrapper                                                               |     1.476 |
 |     iic_fmc_scl_iobuf                                                            |     0.000 |
 |     iic_fmc_sda_iobuf                                                            |     0.000 |
-|     system_i                                                                     |     1.478 |
+|     system_i                                                                     |     1.476 |
 |       axi_cpu_interconnect                                                       |     0.003 |
 |         s00_couplers                                                             |     0.003 |
 |           auto_pc                                                                |     0.003 |
@@ -260,14 +260,14 @@ Table of Contents
 |             Dual.INPUT_DOUBLE_REGS5                                              |    <0.001 |
 |       axi_hdmi_clkgen                                                            |     0.002 |
 |         inst                                                                     |     0.002 |
-|           i_mmcm_drp                                                             |    <0.001 |
+|           i_mmcm_drp                                                             |     0.001 |
 |           i_up_axi                                                               |    <0.001 |
 |           i_up_clkgen                                                            |    <0.001 |
 |             i_drp_cntrl                                                          |    <0.001 |
 |             i_drp_rst_reg                                                        |    <0.001 |
 |             i_mmcm_rst_reg                                                       |    <0.001 |
-|       axi_hdmi_core                                                              |     0.018 |
-|         inst                                                                     |     0.018 |
+|       axi_hdmi_core                                                              |     0.017 |
+|         inst                                                                     |     0.017 |
 |           i_tx_core                                                              |     0.011 |
 |             i_csc_RGB2CrYCb                                                      |     0.004 |
 |               i_csc_1_Cb                                                         |     0.001 |
@@ -278,7 +278,7 @@ Table of Contents
 |                   i_mult_macro                                                   |    <0.001 |
 |                 i_mul_c3                                                         |    <0.001 |
 |                   i_mult_macro                                                   |    <0.001 |
-|               i_csc_1_Cr                                                         |     0.002 |
+|               i_csc_1_Cr                                                         |     0.001 |
 |                 i_add_c4                                                         |     0.001 |
 |                 i_mul_c1                                                         |    <0.001 |
 |                   i_mult_macro                                                   |    <0.001 |
@@ -558,10 +558,10 @@ Table of Contents
 |               data_fifo_reg_0_7_24_29                                            |    <0.001 |
 |               data_fifo_reg_0_7_30_31                                            |    <0.001 |
 |               data_fifo_reg_0_7_6_11                                             |    <0.001 |
-|       pqueue_0                                                                   |     0.006 |
-|         inst                                                                     |     0.006 |
-|       runQueue_0                                                                 |     0.001 |
-|         inst                                                                     |     0.001 |
+|       pqueue_0                                                                   |     0.005 |
+|         inst                                                                     |     0.005 |
+|       runQueue_0                                                                 |     0.002 |
+|         inst                                                                     |     0.002 |
 |           runQueue_AXI4LiteS_if_U                                                |    <0.001 |
 |           runQueue_U                                                             |     0.001 |
 |       sys_audio_clkgen                                                           |     0.121 |
