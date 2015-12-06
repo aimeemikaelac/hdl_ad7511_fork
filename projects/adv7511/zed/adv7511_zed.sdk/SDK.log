@@ -17,3 +17,19 @@
 03:18:35 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /home/michael/ecen5139_final_project/bitstreams/midtermPriorityQueueVerilog/midtermPriorityQueueVerilog_BOOT.bin -w on
 03:18:35 INFO  : Bootgen command execution is done.
 03:18:40 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+03:43:43 INFO  : Processing command line option -hwspec /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:43:43 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.
+03:43:43 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1449398480000,  Project:1449396839000
+03:43:43 INFO  : The hardware specification for project 'system_top_hw_platform_0' is different from /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+03:43:43 INFO  : Copied contents of /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+03:43:45 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+03:43:53 INFO  : 
+03:43:54 INFO  : Updating hardware inferred compiler options for fsbl.
+03:43:54 INFO  : Clearing existing target manager status.
+03:43:56 INFO  : Copied contents of /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+03:43:56 INFO  : Copied contents of /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+03:43:56 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+03:43:58 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+03:46:31 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /home/michael/ecen5139_final_project/bitstreams/midtermPriorityQueueVerilog/midtermPriorityQueueVerilog_BOOT.bin -w on
+03:46:31 INFO  : Bootgen command execution is done.
+03:46:34 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
