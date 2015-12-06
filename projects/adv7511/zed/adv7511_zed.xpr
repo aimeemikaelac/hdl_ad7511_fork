@@ -44,6 +44,8 @@
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_xbar_0/system_xbar_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_sys_rstgen_0/system_sys_rstgen_0.xci"/>
         <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_cpu_interconnect_0/system_axi_cpu_interconnect_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xci"/>
+        <CompFileExtendedInfo CompFileName="system.bd" FileRelPathName="ip/system_axi_gpio_2_0/system_axi_gpio_2_0.xci"/>
       </File>
       <File Path="$PSRCDIR/sources_1/imports/hdl/system_wrapper.v">
         <FileInfo>

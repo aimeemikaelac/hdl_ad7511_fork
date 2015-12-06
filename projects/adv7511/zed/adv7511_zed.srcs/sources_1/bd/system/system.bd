@@ -498,6 +498,28 @@
           <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_runQueue_0_0</spirit:configurableElementValue>
         </spirit:configurableElementValues>
       </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_gpio_1</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_axi_gpio_1_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">2</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_IS_DUAL">0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>axi_gpio_2</spirit:instanceName>
+        <spirit:componentRef spirit:library="ip" spirit:name="axi_gpio" spirit:vendor="xilinx.com" spirit:version="2.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">system_axi_gpio_2_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_GPIO2_WIDTH">4</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_IS_DUAL">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS">1</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="C_ALL_INPUTS_2">1</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
     </spirit:componentInstances>
     <spirit:interconnections>
       <spirit:interconnection>
@@ -595,6 +617,16 @@
         <spirit:activeInterface spirit:busRef="M08_AXI" spirit:componentRef="axi_cpu_interconnect"/>
         <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_gpio_0"/>
       </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_cpu_interconnect_M09_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M09_AXI" spirit:componentRef="axi_cpu_interconnect"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_gpio_1"/>
+      </spirit:interconnection>
+      <spirit:interconnection>
+        <spirit:name>axi_cpu_interconnect_M10_AXI</spirit:name>
+        <spirit:activeInterface spirit:busRef="M10_AXI" spirit:componentRef="axi_cpu_interconnect"/>
+        <spirit:activeInterface spirit:busRef="S_AXI" spirit:componentRef="axi_gpio_2"/>
+      </spirit:interconnection>
     </spirit:interconnections>
     <spirit:adHocConnections>
       <spirit:adHocConnection>
@@ -645,6 +677,8 @@
         <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aclk"/>
         <spirit:internalPortReference spirit:componentRef="pqueue_0" spirit:portRef="clock"/>
         <spirit:internalPortReference spirit:componentRef="runQueue_0" spirit:portRef="aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aclk"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_2" spirit:portRef="s_axi_aclk"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>sys_200m_clk</spirit:name>
@@ -693,6 +727,8 @@
         <spirit:internalPortReference spirit:componentRef="axi_mem_intercon" spirit:portRef="S01_ARESETN"/>
         <spirit:internalPortReference spirit:componentRef="axi_gpio_0" spirit:portRef="s_axi_aresetn"/>
         <spirit:internalPortReference spirit:componentRef="runQueue_0" spirit:portRef="aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="s_axi_aresetn"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_2" spirit:portRef="s_axi_aresetn"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>sys_ps7_GPIO_I</spirit:name>
@@ -978,16 +1014,19 @@
         <spirit:name>runQueue_0_priorityOut_V</spirit:name>
         <spirit:internalPortReference spirit:componentRef="runQueue_0" spirit:portRef="priorityOut_V"/>
         <spirit:internalPortReference spirit:componentRef="pqueue_0" spirit:portRef="in"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_2" spirit:portRef="gpio_io_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>runQueue_0_cmdOut_V</spirit:name>
         <spirit:internalPortReference spirit:componentRef="runQueue_0" spirit:portRef="cmdOut_V"/>
         <spirit:internalPortReference spirit:componentRef="pqueue_0" spirit:portRef="cmd"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_1" spirit:portRef="gpio_io_i"/>
       </spirit:adHocConnection>
       <spirit:adHocConnection>
         <spirit:name>pqueue_0_out</spirit:name>
         <spirit:internalPortReference spirit:componentRef="pqueue_0" spirit:portRef="out"/>
         <spirit:internalPortReference spirit:componentRef="runQueue_0" spirit:portRef="priorityIn_V"/>
+        <spirit:internalPortReference spirit:componentRef="axi_gpio_2" spirit:portRef="gpio2_io_i"/>
       </spirit:adHocConnection>
     </spirit:adHocConnections>
     <spirit:hierConnections>
@@ -5861,6 +5900,18 @@
             <spirit:name>SEG_runQueue_0_Reg</spirit:name>
             <spirit:displayName>/runQueue_0/S_AXI_AXI4LITES/Reg</spirit:displayName>
             <spirit:addressOffset>0x43C00000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_axi_gpio_1_Reg</spirit:name>
+            <spirit:displayName>/axi_gpio_1/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x41210000</spirit:addressOffset>
+            <spirit:range>64K</spirit:range>
+          </spirit:segment>
+          <spirit:segment>
+            <spirit:name>SEG_axi_gpio_2_Reg</spirit:name>
+            <spirit:displayName>/axi_gpio_2/S_AXI/Reg</spirit:displayName>
+            <spirit:addressOffset>0x41220000</spirit:addressOffset>
             <spirit:range>64K</spirit:range>
           </spirit:segment>
         </spirit:segments>

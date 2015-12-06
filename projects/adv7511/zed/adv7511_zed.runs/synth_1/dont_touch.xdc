@@ -69,6 +69,12 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio
 # IP: bd/system/ip/system_pqueue_0_1/system_pqueue_0_1.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_pqueue_0_1 || ORIG_REF_NAME==system_pqueue_0_1}]
 
+# IP: bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_1_0 || ORIG_REF_NAME==system_axi_gpio_1_0}]
+
+# IP: bd/system/ip/system_axi_gpio_2_0/system_axi_gpio_2_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_axi_gpio_2_0 || ORIG_REF_NAME==system_axi_gpio_2_0}]
+
 # IP: bd/system/ip/system_auto_pc_0/system_auto_pc_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_auto_pc_0 || ORIG_REF_NAME==system_auto_pc_0}]
 
@@ -125,7 +131,7 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc
 
-# XDC: ipshared/xilinx.com/runQueue_v1_0/ab7fa62d/constraints/runQueue_ooc.xdc
+# XDC: ipshared/xilinx.com/runQueue_v1_0/fa2ca977/constraints/runQueue_ooc.xdc
 
 # XDC: bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc
 
@@ -137,6 +143,22 @@ set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {R
 
 # XDC: ipshared/ngn.cs.colorado.edu/pqueue_v1_0/1d519e33/constrs_1/imports/verilog/runQueue.xdc
 #dup# set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==system_pqueue_0_1 || ORIG_REF_NAME==system_pqueue_0_1}]
+
+# XDC: bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_ooc.xdc
+
+# XDC: bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_1_0 || ORIG_REF_NAME==system_axi_gpio_1_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/system/ip/system_axi_gpio_1_0/system_axi_gpio_1_0_board.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_1_0 || ORIG_REF_NAME==system_axi_gpio_1_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/system/ip/system_axi_gpio_2_0/system_axi_gpio_2_0_ooc.xdc
+
+# XDC: bd/system/ip/system_axi_gpio_2_0/system_axi_gpio_2_0.xdc
+set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_2_0 || ORIG_REF_NAME==system_axi_gpio_2_0}] {/U0 }]/U0 ]]
+
+# XDC: bd/system/ip/system_axi_gpio_2_0/system_axi_gpio_2_0_board.xdc
+#dup# set_property DONT_TOUCH TRUE [get_cells [split [join [get_cells -hier -filter {REF_NAME==system_axi_gpio_2_0 || ORIG_REF_NAME==system_axi_gpio_2_0}] {/U0 }]/U0 ]]
 
 # XDC: bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc
 
