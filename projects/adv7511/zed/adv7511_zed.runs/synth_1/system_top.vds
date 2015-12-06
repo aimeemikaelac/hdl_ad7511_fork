@@ -2,8 +2,8 @@
 # Vivado v2014.2 (64-bit)
 # SW Build 932637 on Wed Jun 11 13:08:52 MDT 2014
 # IP Build 924643 on Fri May 30 09:20:16 MDT 2014
-# Start of session at: Sat Dec  5 17:28:35 2015
-# Process ID: 15186
+# Start of session at: Sat Dec  5 18:15:19 2015
+# Process ID: 17827
 # Log file: /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.runs/synth_1/system_top.vds
 # Journal file: /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.runs/synth_1/vivado.jou
 #-----------------------------------------------------------
@@ -62,7 +62,7 @@ CRITICAL WARNING: [IP_Flow 19-1663] Duplicate IP found for 'analog.com:user:ip_p
 # set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_iic_fmc_0/system_axi_iic_fmc_0_board.xdc]
 # set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_xbar_1/system_xbar_1_ooc.xdc]
-# set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/constraints/runQueue_ooc.xdc]
+# set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/constraints/runQueue_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_ooc.xdc]
 # set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0.xdc]
 # set_property used_in_implementation false [get_files -all /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_axi_gpio_0_0/system_axi_gpio_0_0_board.xdc]
@@ -106,7 +106,7 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
 WARNING: [Synth 8-2507] parameter declaration becomes local in pqueue with formal parameter declaration list [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/ngn.cs.colorado.edu/pqueue_v1_0/1d519e33/sources_1/imports/CAV_Midterm_PriorityQueue/gpqueue.sv:117]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 858.250 ; gain = 221.535
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 858.254 ; gain = 221.535
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-2048] function gpo_bit_used does not always return a value [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/axi_iic_v2_0/67ecd3ed/hdl/src/vhdl/iic_pkg.vhd:208]
 INFO: [Synth 8-638] synthesizing module 'system_top' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/system_top.v:42]
@@ -7031,11 +7031,11 @@ INFO: [Synth 8-4512] found unpartitioned construct node [/home/michael/ecen5139_
 INFO: [Synth 8-256] done synthesizing module 'pqueue' (212#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/ngn.cs.colorado.edu/pqueue_v1_0/1d519e33/sources_1/imports/CAV_Midterm_PriorityQueue/gpqueue.sv:113]
 INFO: [Synth 8-256] done synthesizing module 'system_pqueue_0_1' (213#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_pqueue_0_1/synth/system_pqueue_0_1.v:56]
 INFO: [Synth 8-638] synthesizing module 'system_runQueue_0_0' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_runQueue_0_0/synth/system_runQueue_0_0.v:57]
-INFO: [Synth 8-638] synthesizing module 'runqueue_top' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runqueue_top.v:9]
-	Parameter C_S_AXI_AXI4LITES_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'runqueue_top' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runqueue_top.v:9]
+	Parameter C_S_AXI_AXI4LITES_ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter C_S_AXI_AXI4LITES_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter RESET_ACTIVE_LOW bound to: 1 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'runQueue' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue.v:12]
+INFO: [Synth 8-638] synthesizing module 'runQueue' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue.v:12]
 	Parameter ap_const_logic_1 bound to: 1'b1 
 	Parameter ap_const_logic_0 bound to: 1'b0 
 	Parameter ap_ST_st1_fsm_0 bound to: 5'b00000 
@@ -7064,6 +7064,7 @@ INFO: [Synth 8-638] synthesizing module 'runQueue' [/home/michael/ecen5139_final
 	Parameter ap_ST_st24_fsm_23 bound to: 5'b10111 
 	Parameter ap_ST_st25_fsm_24 bound to: 5'b11000 
 	Parameter ap_ST_st26_fsm_25 bound to: 5'b11001 
+	Parameter ap_ST_st27_fsm_26 bound to: 5'b11010 
 	Parameter ap_const_lv1_0 bound to: 1'b0 
 	Parameter ap_const_lv1_1 bound to: 1'b1 
 	Parameter ap_const_lv32_1 bound to: 1 - type: integer 
@@ -7074,40 +7075,42 @@ INFO: [Synth 8-638] synthesizing module 'runQueue' [/home/michael/ecen5139_final
 	Parameter ap_const_lv2_0 bound to: 2'b00 
 	Parameter ap_const_lv2_2 bound to: 2'b10 
 	Parameter ap_true bound to: 1'b1 
-INFO: [Synth 8-638] synthesizing module 'runQueue_random_priorities' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_random_priorities.v:43]
+INFO: [Synth 8-638] synthesizing module 'runQueue_random_priorities' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_random_priorities.v:43]
 	Parameter DataWidth bound to: 9 - type: integer 
 	Parameter AddressRange bound to: 200 - type: integer 
 	Parameter AddressWidth bound to: 8 - type: integer 
-INFO: [Synth 8-638] synthesizing module 'runQueue_random_priorities_rom' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_random_priorities.v:9]
+INFO: [Synth 8-638] synthesizing module 'runQueue_random_priorities_rom' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_random_priorities.v:9]
 	Parameter DWIDTH bound to: 9 - type: integer 
 	Parameter AWIDTH bound to: 8 - type: integer 
 	Parameter MEM_SIZE bound to: 200 - type: integer 
-INFO: [Synth 8-3876] $readmem data file './runQueue_random_priorities_rom.dat' is read successfully [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_random_priorities.v:24]
-INFO: [Synth 8-256] done synthesizing module 'runQueue_random_priorities_rom' (214#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_random_priorities.v:9]
-INFO: [Synth 8-256] done synthesizing module 'runQueue_random_priorities' (215#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_random_priorities.v:43]
-INFO: [Synth 8-256] done synthesizing module 'runQueue' (216#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue.v:12]
-INFO: [Synth 8-638] synthesizing module 'runQueue_AXI4LiteS_if' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_AXI4LiteS_if.v:9]
-	Parameter C_ADDR_WIDTH bound to: 5 - type: integer 
+INFO: [Synth 8-3876] $readmem data file './runQueue_random_priorities_rom.dat' is read successfully [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_random_priorities.v:24]
+INFO: [Synth 8-256] done synthesizing module 'runQueue_random_priorities_rom' (214#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_random_priorities.v:9]
+INFO: [Synth 8-256] done synthesizing module 'runQueue_random_priorities' (215#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_random_priorities.v:43]
+INFO: [Synth 8-256] done synthesizing module 'runQueue' (216#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue.v:12]
+INFO: [Synth 8-638] synthesizing module 'runQueue_AXI4LiteS_if' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_AXI4LiteS_if.v:9]
+	Parameter C_ADDR_WIDTH bound to: 8 - type: integer 
 	Parameter C_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter ADDR_BITS bound to: 5 - type: integer 
-	Parameter ADDR_AP_CTRL bound to: 5'b00000 
-	Parameter ADDR_GIE bound to: 5'b00100 
-	Parameter ADDR_IER bound to: 5'b01000 
-	Parameter ADDR_ISR bound to: 5'b01100 
-	Parameter ADDR_CURRENTPRIORITY_V_CTRL bound to: 5'b10000 
-	Parameter ADDR_CURRENTPRIORITY_V_DATA_0 bound to: 5'b10100 
-	Parameter ADDR_AP_RETURN_0 bound to: 5'b11000 
+	Parameter ADDR_BITS bound to: 6 - type: integer 
+	Parameter ADDR_AP_CTRL bound to: 6'b000000 
+	Parameter ADDR_GIE bound to: 6'b000100 
+	Parameter ADDR_IER bound to: 6'b001000 
+	Parameter ADDR_ISR bound to: 6'b001100 
+	Parameter ADDR_CURRENTPRIORITY_V_CTRL bound to: 6'b010000 
+	Parameter ADDR_CURRENTPRIORITY_V_DATA_0 bound to: 6'b010100 
+	Parameter ADDR_FULLOUT_CTRL bound to: 6'b011000 
+	Parameter ADDR_FULLOUT_DATA_0 bound to: 6'b011100 
+	Parameter ADDR_AP_RETURN_0 bound to: 6'b100000 
 	Parameter WRIDLE bound to: 2'b00 
 	Parameter WRDATA bound to: 2'b01 
 	Parameter WRRESP bound to: 2'b10 
 	Parameter RDIDLE bound to: 2'b00 
 	Parameter RDDATA bound to: 2'b01 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_AXI4LiteS_if.v:209]
-INFO: [Synth 8-256] done synthesizing module 'runQueue_AXI4LiteS_if' (217#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_AXI4LiteS_if.v:9]
-INFO: [Synth 8-638] synthesizing module 'runQueue_ap_rst_if' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_ap_rst_if.v:10]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_AXI4LiteS_if.v:217]
+INFO: [Synth 8-256] done synthesizing module 'runQueue_AXI4LiteS_if' (217#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_AXI4LiteS_if.v:9]
+INFO: [Synth 8-638] synthesizing module 'runQueue_ap_rst_if' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_ap_rst_if.v:10]
 	Parameter RESET_ACTIVE_LOW bound to: 1 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'runQueue_ap_rst_if' (218#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue_ap_rst_if.v:10]
-INFO: [Synth 8-256] done synthesizing module 'runqueue_top' (219#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runqueue_top.v:9]
+INFO: [Synth 8-256] done synthesizing module 'runQueue_ap_rst_if' (218#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue_ap_rst_if.v:10]
+INFO: [Synth 8-256] done synthesizing module 'runqueue_top' (219#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runqueue_top.v:9]
 INFO: [Synth 8-256] done synthesizing module 'system_runQueue_0_0' (220#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_runQueue_0_0/synth/system_runQueue_0_0.v:57]
 WARNING: [Synth 8-350] instance 'runQueue_0' of module 'system_runQueue_0_0' requires 25 connections, but only 24 given [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/hdl/system.v:4289]
 INFO: [Synth 8-638] synthesizing module 'system_sys_audio_clkgen_0' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/bd/system/ip/system_sys_audio_clkgen_0/system_sys_audio_clkgen_0.v:69]
@@ -7443,7 +7446,7 @@ INFO: [Synth 8-256] done synthesizing module 'system_wrapper' (241#1) [/home/mic
 WARNING: [Synth 8-3848] Net ps_intrs in module/entity system_top does not have driver. [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/system_top.v:149]
 INFO: [Synth 8-256] done synthesizing module 'system_top' (242#1) [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/system_top.v:42]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:04:29 ; elapsed = 00:04:33 . Memory (MB): peak = 1119.598 ; gain = 482.883
+Finished RTL Elaboration : Time (s): cpu = 00:04:12 ; elapsed = 00:04:15 . Memory (MB): peak = 1119.602 ; gain = 482.883
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Optimization
@@ -7564,7 +7567,7 @@ Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:04:44 ; elapsed = 00:04:50 . Memory (MB): peak = 1315.156 ; gain = 678.441
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:27 ; elapsed = 00:04:31 . Memory (MB): peak = 1315.160 ; gain = 678.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -7603,10 +7606,10 @@ Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/michael/e
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.runs/synth_1/dont_touch.xdc, line 150).
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.runs/synth_1/dont_touch.xdc, line 158).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:46 ; elapsed = 00:04:52 . Memory (MB): peak = 1315.156 ; gain = 678.441
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:29 ; elapsed = 00:04:33 . Memory (MB): peak = 1315.160 ; gain = 678.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization : Time (s): cpu = 00:04:46 ; elapsed = 00:04:52 . Memory (MB): peak = 1315.156 ; gain = 678.441
+Finished RTL Optimization : Time (s): cpu = 00:04:29 ; elapsed = 00:04:33 . Memory (MB): peak = 1315.160 ; gain = 678.441
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'gen_axilite.s_axi_wready_i_reg' into 'gen_axilite.s_axi_awready_i_reg' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/axi_crossbar_v2_1/379ac2ec/hdl/verilog/axi_crossbar_v2_1_decerr_slave.v:136]
 INFO: [Synth 8-802] inferred FSM for state register 'sig_pcc_sm_state_reg' in module 'axi_datamover_pcc'
@@ -7623,8 +7626,8 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_d
 INFO: [Synth 8-802] inferred FSM for state register 'bufctrl_reg' in module 'tx_encoder__parameterized0'
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/common/dma_fifo.vhd:56]
 INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/analog.com/axi_spdif_tx_v1_0/common/dma_fifo.vhd:56]
-INFO: [Synth 8-4471] merging register 'last_load_reg_409_reg[31:4]' into 'last_1_reg_397_reg[31:4]' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue.v:642]
-INFO: [Synth 8-4471] merging register 'last_fu_80_reg[31:4]' into 'last_1_reg_397_reg[31:4]' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/10471526/hdl/verilog/runQueue.v:664]
+INFO: [Synth 8-4471] merging register 'last_load_reg_421_reg[31:4]' into 'last_1_reg_409_reg[31:4]' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue.v:671]
+INFO: [Synth 8-4471] merging register 'last_fu_84_reg[31:4]' into 'last_1_reg_409_reg[31:4]' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/runQueue_v1_0/1c381caf/hdl/verilog/runQueue.v:693]
 INFO: [Synth 8-802] inferred FSM for state register 'ap_CS_fsm_reg' in module 'runQueue'
 INFO: [Synth 8-4471] merging register 'seq_cnt_en_reg' into 'from_sys_reg' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/proc_sys_reset_v5_0/48b3f032/hdl/src/vhdl/sequence.vhd:222]
 INFO: [Synth 8-3354] encoded FSM with state register 'sig_pcc_sm_state_reg' using encoding 'one-hot' in module 'axi_datamover_pcc'
@@ -7677,17 +7680,17 @@ Detailed RTL Component Info :
 	   3 Input     16 Bit       Adders := 1     
 	   2 Input     13 Bit       Adders := 1     
 	   2 Input     12 Bit       Adders := 6     
-	   3 Input     10 Bit       Adders := 2     
 	   2 Input     10 Bit       Adders := 8     
+	   3 Input     10 Bit       Adders := 2     
 	   2 Input      9 Bit       Adders := 6     
 	   3 Input      9 Bit       Adders := 1     
 	   2 Input      8 Bit       Adders := 14    
 	   2 Input      7 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 11    
-	   3 Input      5 Bit       Adders := 2     
 	   2 Input      5 Bit       Adders := 19    
-	   3 Input      4 Bit       Adders := 4     
+	   3 Input      5 Bit       Adders := 2     
 	   2 Input      4 Bit       Adders := 20    
+	   3 Input      4 Bit       Adders := 4     
 	   2 Input      3 Bit       Adders := 9     
 	   2 Input      2 Bit       Adders := 14    
 	   2 Input      1 Bit       Adders := 2     
@@ -7713,12 +7716,12 @@ Detailed RTL Component Info :
 	                9 Bit    Registers := 20    
 	                8 Bit    Registers := 43    
 	                7 Bit    Registers := 3     
-	                6 Bit    Registers := 13    
-	                5 Bit    Registers := 52    
+	                6 Bit    Registers := 14    
+	                5 Bit    Registers := 51    
 	                4 Bit    Registers := 66    
 	                3 Bit    Registers := 29    
 	                2 Bit    Registers := 98    
-	                1 Bit    Registers := 1048  
+	                1 Bit    Registers := 1049  
 +---RAMs : 
 	              24K Bit         RAMs := 1     
 	              256 Bit         RAMs := 1     
@@ -7732,14 +7735,13 @@ Detailed RTL Component Info :
 	   2 Input     66 Bit        Muxes := 4     
 	   2 Input     64 Bit        Muxes := 2     
 	   2 Input     47 Bit        Muxes := 2     
-	  19 Input     32 Bit        Muxes := 3     
-	   8 Input     32 Bit        Muxes := 4     
-	   7 Input     32 Bit        Muxes := 1     
 	  11 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 38    
+	  19 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 4     
+	   2 Input     32 Bit        Muxes := 38    
+	   8 Input     32 Bit        Muxes := 5     
 	   5 Input     32 Bit        Muxes := 2     
-	  42 Input     27 Bit        Muxes := 1     
+	  43 Input     28 Bit        Muxes := 1     
 	   2 Input     25 Bit        Muxes := 12    
 	   2 Input     24 Bit        Muxes := 3     
 	   4 Input     24 Bit        Muxes := 1     
@@ -7750,45 +7752,45 @@ Detailed RTL Component Info :
 	   8 Input     12 Bit        Muxes := 3     
 	   2 Input     12 Bit        Muxes := 6     
 	   2 Input     11 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 6     
 	  20 Input     10 Bit        Muxes := 2     
+	   2 Input     10 Bit        Muxes := 6     
 	   2 Input      9 Bit        Muxes := 13    
-	   8 Input      8 Bit        Muxes := 4     
+	   2 Input      8 Bit        Muxes := 37    
 	  20 Input      8 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 4     
 	   4 Input      8 Bit        Muxes := 1     
 	  12 Input      8 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 37    
-	   2 Input      7 Bit        Muxes := 1     
 	  12 Input      7 Bit        Muxes := 1     
-	   2 Input      6 Bit        Muxes := 2     
-	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
 	   5 Input      6 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
 	   2 Input      5 Bit        Muxes := 11    
+	  28 Input      5 Bit        Muxes := 1     
 	   5 Input      5 Bit        Muxes := 2     
-	  27 Input      5 Bit        Muxes := 1     
 	   4 Input      5 Bit        Muxes := 1     
 	  10 Input      4 Bit        Muxes := 2     
-	   2 Input      4 Bit        Muxes := 55    
 	   3 Input      4 Bit        Muxes := 4     
-	   9 Input      3 Bit        Muxes := 1     
-	   8 Input      3 Bit        Muxes := 2     
-	   2 Input      3 Bit        Muxes := 18    
+	   2 Input      4 Bit        Muxes := 55    
 	   7 Input      3 Bit        Muxes := 1     
-	   3 Input      3 Bit        Muxes := 1     
 	   6 Input      3 Bit        Muxes := 5     
-	   4 Input      2 Bit        Muxes := 25    
-	   3 Input      2 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 131   
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 18    
+	   3 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
 	   5 Input      2 Bit        Muxes := 7     
-	   3 Input      1 Bit        Muxes := 14    
-	   5 Input      1 Bit        Muxes := 4     
-	   6 Input      1 Bit        Muxes := 5     
-	   7 Input      1 Bit        Muxes := 5     
-	  11 Input      1 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 25    
+	   2 Input      2 Bit        Muxes := 131   
+	   3 Input      2 Bit        Muxes := 2     
 	   4 Input      1 Bit        Muxes := 49    
+	  11 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 14    
+	   6 Input      1 Bit        Muxes := 5     
 	   8 Input      1 Bit        Muxes := 10    
+	   2 Input      1 Bit        Muxes := 824   
 	  10 Input      1 Bit        Muxes := 18    
-	   2 Input      1 Bit        Muxes := 823   
+	   7 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -9600,18 +9602,18 @@ Detailed RTL Component Info :
 	                1 Bit    Registers := 14    
 +---Muxes : 
 	   2 Input     24 Bit        Muxes := 1     
-	   4 Input      8 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
 	   5 Input      6 Bit        Muxes := 1     
 	   2 Input      5 Bit        Muxes := 2     
 	   4 Input      5 Bit        Muxes := 1     
 	   6 Input      3 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 2     
 	   2 Input      2 Bit        Muxes := 1     
-	   5 Input      1 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 21    
 	   4 Input      1 Bit        Muxes := 14    
 	   6 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 21    
 Module axi_ctrlif__parameterized0 
 Detailed RTL Component Info : 
 +---Registers : 
@@ -9687,24 +9689,24 @@ Detailed RTL Component Info :
 	               28 Bit    Registers := 1     
 	                4 Bit    Registers := 7     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 15    
+	                1 Bit    Registers := 16    
 +---Muxes : 
-	  42 Input     27 Bit        Muxes := 1     
-	  27 Input      5 Bit        Muxes := 1     
+	  43 Input     28 Bit        Muxes := 1     
+	  28 Input      5 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 7     
 	   2 Input      2 Bit        Muxes := 6     
-	   2 Input      1 Bit        Muxes := 20    
+	   2 Input      1 Bit        Muxes := 21    
 Module runQueue_AXI4LiteS_if 
 Detailed RTL Component Info : 
 +---XORs : 
 	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                5 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
 	                2 Bit    Registers := 2     
 	                1 Bit    Registers := 7     
 +---Muxes : 
-	   7 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 2     
 	   3 Input      1 Bit        Muxes := 1     
@@ -9775,7 +9777,7 @@ BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:04:52 ; elapsed = 00:05:00 . Memory (MB): peak = 1315.156 ; gain = 678.441
+Workers Ready, Starting Parallel Section  : Time (s): cpu = 00:04:34 ; elapsed = 00:04:41 . Memory (MB): peak = 1315.160 ; gain = 678.441
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
@@ -9840,9 +9842,9 @@ INFO: [Synth 8-4471] merging register 'DYNAMIC_SLAVE_MODE_FRAME_CNT.valid_frame_
 INFO: [Synth 8-4471] merging register 'DYNAMIC_SLAVE_MODE_FRAME_CNT.tstvect_fsync_d1_reg' into 'I_SM/frame_sync_d1_reg' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/axi_vdma_v6_2/1ffe6048/hdl/src/vhdl/axi_vdma_mngr.vhd:781]
 INFO: [Synth 8-4471] merging register 'DYNAMIC_SLAVE_MODE_FRAME_CNT.tstvect_fsync_d2_reg' into 'I_SM/frame_sync_d2_reg' [/home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.srcs/sources_1/ipshared/xilinx.com/axi_vdma_v6_2/1ffe6048/hdl/src/vhdl/axi_vdma_mngr.vhd:782]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:04:54 ; elapsed = 00:05:04 . Memory (MB): peak = 1315.156 ; gain = 678.441
+Finished Cross Boundary Optimization : Time (s): cpu = 00:04:36 ; elapsed = 00:04:46 . Memory (MB): peak = 1315.160 ; gain = 678.441
 ---------------------------------------------------------------------------------
-Finished Parallel Reinfer  : Time (s): cpu = 00:04:54 ; elapsed = 00:05:04 . Memory (MB): peak = 1315.156 ; gain = 678.441
+Finished Parallel Reinfer  : Time (s): cpu = 00:04:36 ; elapsed = 00:04:46 . Memory (MB): peak = 1315.160 ; gain = 678.441
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
@@ -9980,10 +9982,10 @@ INFO: [Synth 8-3332] Sequential element (\GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CM
 INFO: [Synth 8-3332] Sequential element (\GEN_SPRT_FOR_MM2S.I_MM2S_DMA_MNGR/I_CMDSTS/s_axis_cmd_tdata_reg[20] ) is unused and will be removed from module axi_vdma__parameterized0.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:05:06 ; elapsed = 00:05:18 . Memory (MB): peak = 1347.176 ; gain = 710.461
+Finished Area Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:05:00 . Memory (MB): peak = 1347.180 ; gain = 710.461
 ---------------------------------------------------------------------------------
-Finished Parallel Area Opt  : Time (s): cpu = 00:05:06 ; elapsed = 00:05:18 . Memory (MB): peak = 1347.176 ; gain = 710.461
-Finished Parallel Section  : Time (s): cpu = 00:05:06 ; elapsed = 00:05:18 . Memory (MB): peak = 1347.176 ; gain = 710.461
+Finished Parallel Area Opt  : Time (s): cpu = 00:04:48 ; elapsed = 00:05:00 . Memory (MB): peak = 1347.180 ; gain = 710.461
+Finished Parallel Section  : Time (s): cpu = 00:04:48 ; elapsed = 00:05:00 . Memory (MB): peak = 1347.180 ; gain = 710.461
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
@@ -9992,17 +9994,17 @@ Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: Moved 2 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:05:15 ; elapsed = 00:05:27 . Memory (MB): peak = 1532.176 ; gain = 895.461
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:57 ; elapsed = 00:05:09 . Memory (MB): peak = 1531.180 ; gain = 894.461
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:05:17 ; elapsed = 00:05:29 . Memory (MB): peak = 1553.184 ; gain = 916.469
+Finished Timing Optimization : Time (s): cpu = 00:04:59 ; elapsed = 00:05:11 . Memory (MB): peak = 1552.188 ; gain = 915.469
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance \inst/runQueue_U/random_priorities_U/runQueue_random_priorities_rom_U/q0_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:05:25 ; elapsed = 00:05:41 . Memory (MB): peak = 1584.152 ; gain = 947.438
+Finished Technology Mapping : Time (s): cpu = 00:05:07 ; elapsed = 00:05:23 . Memory (MB): peak = 1583.930 ; gain = 947.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -10050,7 +10052,7 @@ WARNING: [Synth 8-4617] Design system_auto_pc_0 has 4 max_fanout violations that
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:05:28 ; elapsed = 00:05:44 . Memory (MB): peak = 1584.152 ; gain = 947.438
+Finished IO Insertion : Time (s): cpu = 00:05:10 ; elapsed = 00:05:26 . Memory (MB): peak = 1583.930 ; gain = 947.211
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -10063,13 +10065,13 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:05:28 ; elapsed = 00:05:44 . Memory (MB): peak = 1584.152 ; gain = 947.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:10 ; elapsed = 00:05:26 . Memory (MB): peak = 1583.930 ; gain = 947.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:29 ; elapsed = 00:05:46 . Memory (MB): peak = 1584.152 ; gain = 947.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:11 ; elapsed = 00:05:28 . Memory (MB): peak = 1583.930 ; gain = 947.211
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RAM, DSP and Shift Register Reporting
@@ -10138,11 +10140,11 @@ Report Cell Usage:
 |12    |CARRY4     |   228|
 |13    |GND        |     2|
 |14    |LUT1       |   470|
-|15    |LUT2       |   918|
-|16    |LUT3       |  1235|
-|17    |LUT4       |  1031|
-|18    |LUT5       |  1093|
-|19    |LUT6       |  1925|
+|15    |LUT2       |   908|
+|16    |LUT3       |  1232|
+|17    |LUT4       |  1032|
+|18    |LUT5       |  1107|
+|19    |LUT6       |  1944|
 |20    |MMCME2_ADV |     2|
 |21    |MUXCY      |    20|
 |22    |MUXCY_L    |   262|
@@ -10163,7 +10165,7 @@ Report Cell Usage:
 |37    |FDCE       |  1048|
 |38    |FDPE       |    53|
 |39    |FDR        |    70|
-|40    |FDRE       |  5210|
+|40    |FDRE       |  5213|
 |41    |FDS        |    12|
 |42    |FDSE       |   256|
 |43    |IBUF       |     3|
@@ -10175,12 +10177,12 @@ Report Instance Areas:
 +------+-----------------------------------------------------------------------------------+-------------------------------------------------------------------+------+
 |      |Instance                                                                           |Module                                                             |Cells |
 +------+-----------------------------------------------------------------------------------+-------------------------------------------------------------------+------+
-|1     |top                                                                                |                                                                   | 15995|
+|1     |top                                                                                |                                                                   | 16019|
 |2     |  i_iic_mux_scl                                                                    |ad_iobuf__parameterized0                                           |     2|
 |3     |  i_iic_mux_sda                                                                    |ad_iobuf__parameterized0_0                                         |     2|
 |4     |  i_iobuf                                                                          |ad_iobuf                                                           |    32|
-|5     |  i_system_wrapper                                                                 |system_wrapper                                                     | 15932|
-|6     |    system_i                                                                       |system                                                             | 15930|
+|5     |  i_system_wrapper                                                                 |system_wrapper                                                     | 15956|
+|6     |    system_i                                                                       |system                                                             | 15954|
 |7     |      axi_cpu_interconnect                                                         |system_axi_cpu_interconnect_0                                      |  1832|
 |8     |        xbar                                                                       |system_xbar_0                                                      |   518|
 |9     |          inst                                                                     |axi_crossbar_v2_1_axi_crossbar                                     |   518|
@@ -10537,12 +10539,12 @@ Report Instance Areas:
 |360   |            fifo                                                                   |dma_fifo__parameterized0                                           |    47|
 |361   |      pqueue_0                                                                     |system_pqueue_0_1                                                  |    50|
 |362   |        inst                                                                       |pqueue                                                             |    50|
-|363   |      runQueue_0                                                                   |system_runQueue_0_0                                                |   521|
-|364   |        inst                                                                       |runqueue_top                                                       |   521|
-|365   |          runQueue_AXI4LiteS_if_U                                                  |runQueue_AXI4LiteS_if                                              |    55|
-|366   |          runQueue_U                                                               |runQueue                                                           |   466|
-|367   |            random_priorities_U                                                    |runQueue_random_priorities                                         |    12|
-|368   |              runQueue_random_priorities_rom_U                                     |runQueue_random_priorities_rom                                     |    12|
+|363   |      runQueue_0                                                                   |system_runQueue_0_0                                                |   545|
+|364   |        inst                                                                       |runqueue_top                                                       |   545|
+|365   |          runQueue_AXI4LiteS_if_U                                                  |runQueue_AXI4LiteS_if                                              |    56|
+|366   |          runQueue_U                                                               |runQueue                                                           |   489|
+|367   |            random_priorities_U                                                    |runQueue_random_priorities                                         |    11|
+|368   |              runQueue_random_priorities_rom_U                                     |runQueue_random_priorities_rom                                     |    11|
 |369   |      sys_audio_clkgen                                                             |system_sys_audio_clkgen_0                                          |     5|
 |370   |        inst                                                                       |system_sys_audio_clkgen_0_clk_wiz                                  |     5|
 |371   |      sys_concat_intc                                                              |system_sys_concat_intc_0                                           |     0|
@@ -10557,10 +10559,10 @@ Report Instance Areas:
 |380   |            SEQ_COUNTER                                                            |proc_sys_reset_v5_0_upcnt_n                                        |    14|
 +------+-----------------------------------------------------------------------------------+-------------------------------------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:05:29 ; elapsed = 00:05:46 . Memory (MB): peak = 1584.152 ; gain = 947.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:11 ; elapsed = 00:05:29 . Memory (MB): peak = 1583.930 ; gain = 947.211
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 29 warnings.
-Synthesis Optimization Complete : Time (s): cpu = 00:05:29 ; elapsed = 00:05:46 . Memory (MB): peak = 1584.152 ; gain = 947.438
+Synthesis Optimization Complete : Time (s): cpu = 00:05:12 ; elapsed = 00:05:29 . Memory (MB): peak = 1583.930 ; gain = 947.211
 INFO: [Netlist 29-17] Analyzing 934 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. i_system_wrapper/system_i/sys_audio_clkgen/inst/clkin1_ibufg 
@@ -10584,8 +10586,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 1292 Infos, 181 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:05:30 ; elapsed = 00:05:47 . Memory (MB): peak = 1610.152 ; gain = 814.777
+synth_design: Time (s): cpu = 00:05:12 ; elapsed = 00:05:30 . Memory (MB): peak = 1610.930 ; gain = 815.551
 # write_checkpoint system_top.dcp
 # report_utilization -file system_top_utilization_synth.rpt -pb system_top_utilization_synth.pb
-report_utilization: Time (s): cpu = 00:00:00.19 ; elapsed = 00:00:00.22 . Memory (MB): peak = 1610.156 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Sat Dec  5 17:34:32 2015...
+report_utilization: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.31 . Memory (MB): peak = 1610.934 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  5 18:20:59 2015...

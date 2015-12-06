@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-//Date        : Sat Dec  5 17:28:30 2015
+//Date        : Sat Dec  5 18:15:11 2015
 //Host        : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 //Command     : generate_target system.bd
 //Design      : system
@@ -1372,10 +1372,10 @@ module m07_couplers_imp_VOBCPR
     S_AXI_wvalid);
   input M_ACLK;
   input [0:0]M_ARESETN;
-  output [4:0]M_AXI_araddr;
+  output [7:0]M_AXI_araddr;
   input M_AXI_arready;
   output M_AXI_arvalid;
-  output [4:0]M_AXI_awaddr;
+  output [7:0]M_AXI_awaddr;
   input M_AXI_awready;
   output M_AXI_awvalid;
   output M_AXI_bready;
@@ -1391,10 +1391,10 @@ module m07_couplers_imp_VOBCPR
   output M_AXI_wvalid;
   input S_ACLK;
   input [0:0]S_ARESETN;
-  input [4:0]S_AXI_araddr;
+  input [7:0]S_AXI_araddr;
   output S_AXI_arready;
   input S_AXI_arvalid;
-  input [4:0]S_AXI_awaddr;
+  input [7:0]S_AXI_awaddr;
   output S_AXI_awready;
   input S_AXI_awvalid;
   input S_AXI_bready;
@@ -1409,10 +1409,10 @@ module m07_couplers_imp_VOBCPR
   input [3:0]S_AXI_wstrb;
   input S_AXI_wvalid;
 
-  wire [4:0]m07_couplers_to_m07_couplers_ARADDR;
+  wire [7:0]m07_couplers_to_m07_couplers_ARADDR;
   wire m07_couplers_to_m07_couplers_ARREADY;
   wire m07_couplers_to_m07_couplers_ARVALID;
-  wire [4:0]m07_couplers_to_m07_couplers_AWADDR;
+  wire [7:0]m07_couplers_to_m07_couplers_AWADDR;
   wire m07_couplers_to_m07_couplers_AWREADY;
   wire m07_couplers_to_m07_couplers_AWVALID;
   wire m07_couplers_to_m07_couplers_BREADY;
@@ -1427,9 +1427,9 @@ module m07_couplers_imp_VOBCPR
   wire [3:0]m07_couplers_to_m07_couplers_WSTRB;
   wire m07_couplers_to_m07_couplers_WVALID;
 
-  assign M_AXI_araddr[4:0] = m07_couplers_to_m07_couplers_ARADDR;
+  assign M_AXI_araddr[7:0] = m07_couplers_to_m07_couplers_ARADDR;
   assign M_AXI_arvalid = m07_couplers_to_m07_couplers_ARVALID;
-  assign M_AXI_awaddr[4:0] = m07_couplers_to_m07_couplers_AWADDR;
+  assign M_AXI_awaddr[7:0] = m07_couplers_to_m07_couplers_AWADDR;
   assign M_AXI_awvalid = m07_couplers_to_m07_couplers_AWVALID;
   assign M_AXI_bready = m07_couplers_to_m07_couplers_BREADY;
   assign M_AXI_rready = m07_couplers_to_m07_couplers_RREADY;
@@ -1444,10 +1444,10 @@ module m07_couplers_imp_VOBCPR
   assign S_AXI_rresp[1:0] = m07_couplers_to_m07_couplers_RRESP;
   assign S_AXI_rvalid = m07_couplers_to_m07_couplers_RVALID;
   assign S_AXI_wready = m07_couplers_to_m07_couplers_WREADY;
-  assign m07_couplers_to_m07_couplers_ARADDR = S_AXI_araddr[4:0];
+  assign m07_couplers_to_m07_couplers_ARADDR = S_AXI_araddr[7:0];
   assign m07_couplers_to_m07_couplers_ARREADY = M_AXI_arready;
   assign m07_couplers_to_m07_couplers_ARVALID = S_AXI_arvalid;
-  assign m07_couplers_to_m07_couplers_AWADDR = S_AXI_awaddr[4:0];
+  assign m07_couplers_to_m07_couplers_AWADDR = S_AXI_awaddr[7:0];
   assign m07_couplers_to_m07_couplers_AWREADY = M_AXI_awready;
   assign m07_couplers_to_m07_couplers_AWVALID = S_AXI_awvalid;
   assign m07_couplers_to_m07_couplers_BREADY = S_AXI_bready;
@@ -3147,10 +3147,10 @@ module system
 
   wire GND_1;
   wire VCC_1;
-  wire [4:0]axi_cpu_interconnect_M07_AXI_ARADDR;
+  wire [7:0]axi_cpu_interconnect_M07_AXI_ARADDR;
   wire axi_cpu_interconnect_M07_AXI_ARREADY;
   wire axi_cpu_interconnect_M07_AXI_ARVALID;
-  wire [4:0]axi_cpu_interconnect_M07_AXI_AWADDR;
+  wire [7:0]axi_cpu_interconnect_M07_AXI_AWADDR;
   wire axi_cpu_interconnect_M07_AXI_AWREADY;
   wire axi_cpu_interconnect_M07_AXI_AWVALID;
   wire axi_cpu_interconnect_M07_AXI_BREADY;
@@ -4936,10 +4936,10 @@ module system_axi_cpu_interconnect_0
   output M06_AXI_wvalid;
   input M07_ACLK;
   input [0:0]M07_ARESETN;
-  output [4:0]M07_AXI_araddr;
+  output [7:0]M07_AXI_araddr;
   input M07_AXI_arready;
   output M07_AXI_arvalid;
-  output [4:0]M07_AXI_awaddr;
+  output [7:0]M07_AXI_awaddr;
   input M07_AXI_awready;
   output M07_AXI_awvalid;
   output M07_AXI_bready;
@@ -5230,10 +5230,10 @@ module system_axi_cpu_interconnect_0
   wire m06_couplers_to_axi_cpu_interconnect_WREADY;
   wire [3:0]m06_couplers_to_axi_cpu_interconnect_WSTRB;
   wire m06_couplers_to_axi_cpu_interconnect_WVALID;
-  wire [4:0]m07_couplers_to_axi_cpu_interconnect_ARADDR;
+  wire [7:0]m07_couplers_to_axi_cpu_interconnect_ARADDR;
   wire m07_couplers_to_axi_cpu_interconnect_ARREADY;
   wire m07_couplers_to_axi_cpu_interconnect_ARVALID;
-  wire [4:0]m07_couplers_to_axi_cpu_interconnect_AWADDR;
+  wire [7:0]m07_couplers_to_axi_cpu_interconnect_AWADDR;
   wire m07_couplers_to_axi_cpu_interconnect_AWREADY;
   wire m07_couplers_to_axi_cpu_interconnect_AWVALID;
   wire m07_couplers_to_axi_cpu_interconnect_BREADY;
@@ -5607,9 +5607,9 @@ module system_axi_cpu_interconnect_0
   assign M06_AXI_wdata[31:0] = m06_couplers_to_axi_cpu_interconnect_WDATA;
   assign M06_AXI_wstrb[3:0] = m06_couplers_to_axi_cpu_interconnect_WSTRB;
   assign M06_AXI_wvalid = m06_couplers_to_axi_cpu_interconnect_WVALID;
-  assign M07_AXI_araddr[4:0] = m07_couplers_to_axi_cpu_interconnect_ARADDR;
+  assign M07_AXI_araddr[7:0] = m07_couplers_to_axi_cpu_interconnect_ARADDR;
   assign M07_AXI_arvalid = m07_couplers_to_axi_cpu_interconnect_ARVALID;
-  assign M07_AXI_awaddr[4:0] = m07_couplers_to_axi_cpu_interconnect_AWADDR;
+  assign M07_AXI_awaddr[7:0] = m07_couplers_to_axi_cpu_interconnect_AWADDR;
   assign M07_AXI_awvalid = m07_couplers_to_axi_cpu_interconnect_AWVALID;
   assign M07_AXI_bready = m07_couplers_to_axi_cpu_interconnect_BREADY;
   assign M07_AXI_rready = m07_couplers_to_axi_cpu_interconnect_RREADY;
@@ -6083,10 +6083,10 @@ m07_couplers_imp_VOBCPR m07_couplers
         .M_AXI_wvalid(m07_couplers_to_axi_cpu_interconnect_WVALID),
         .S_ACLK(axi_cpu_interconnect_ACLK_net),
         .S_ARESETN(axi_cpu_interconnect_ARESETN_net),
-        .S_AXI_araddr(xbar_to_m07_couplers_ARADDR[228:224]),
+        .S_AXI_araddr(xbar_to_m07_couplers_ARADDR[231:224]),
         .S_AXI_arready(xbar_to_m07_couplers_ARREADY),
         .S_AXI_arvalid(xbar_to_m07_couplers_ARVALID),
-        .S_AXI_awaddr(xbar_to_m07_couplers_AWADDR[228:224]),
+        .S_AXI_awaddr(xbar_to_m07_couplers_AWADDR[231:224]),
         .S_AXI_awready(xbar_to_m07_couplers_AWREADY),
         .S_AXI_awvalid(xbar_to_m07_couplers_AWVALID),
         .S_AXI_bready(xbar_to_m07_couplers_BREADY),
