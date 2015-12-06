@@ -1,7 +1,7 @@
 //Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-//Date        : Sun Dec  6 02:01:59 2015
+//Date        : Sun Dec  6 02:35:47 2015
 //Host        : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 //Command     : generate_target system.bd
 //Design      : system
@@ -3489,7 +3489,7 @@ module system
   wire [0:0]i2s_lrclk_s;
   wire i2s_sdata_in_s;
   wire [0:0]i2s_sdata_out_s;
-  wire [3:0]pqueue_0_out;
+  wire [7:0]pqueue_0_out;
   wire pqueue_1_empty;
   wire pqueue_1_full;
   wire ps_intr_0_s;
@@ -3506,7 +3506,7 @@ module system
   wire ps_intr_8_s;
   wire ps_intr_9_s;
   wire [1:0]runQueue_0_cmdOut_V;
-  wire [3:0]runQueue_0_priorityOut_V;
+  wire [7:0]runQueue_0_priorityOut_V;
   wire spdif_s;
   wire sys_100m_clk;
   wire [0:0]sys_100m_resetn;
@@ -3897,8 +3897,8 @@ system_axi_gpio_1_0 axi_gpio_1
         .s_axi_wstrb(axi_cpu_interconnect_M09_AXI_WSTRB),
         .s_axi_wvalid(axi_cpu_interconnect_M09_AXI_WVALID));
 system_axi_gpio_2_0 axi_gpio_2
-       (.gpio2_io_i(pqueue_0_out),
-        .gpio_io_i(runQueue_0_priorityOut_V),
+       (.gpio2_io_i(pqueue_0_out[3:0]),
+        .gpio_io_i(runQueue_0_priorityOut_V[3:0]),
         .s_axi_aclk(sys_100m_clk),
         .s_axi_araddr(axi_cpu_interconnect_M10_AXI_ARADDR),
         .s_axi_aresetn(sys_100m_resetn),
