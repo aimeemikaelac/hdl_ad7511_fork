@@ -275,3 +275,18 @@
 01:03:52 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
 01:09:37 INFO  : Invoking Bootgen: bootgen -image fsbl.bif -o i /home/michael/ecen5139_final_project/bitstreams/midtermPriorityQueueVerilog/midtermPriorityQueueVerilog_BOOT.bin -w on
 01:09:38 INFO  : Bootgen command execution is done.
+01:33:11 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1449390653000,  Project:1449388963000
+01:33:14 INFO  : Project system_top_hw_platform_0's source hardware specification located at /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+01:33:41 INFO  : Copied contents of /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf into /system_top_hw_platform_0/system.hdf.
+01:33:51 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+01:33:58 INFO  : 
+01:33:59 INFO  : Updating hardware inferred compiler options for fsbl.
+01:33:59 INFO  : Clearing existing target manager status.
+01:33:59 INFO  : Copied contents of /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.html into /fsbl/src/ps7_init.html.
+01:33:59 INFO  : Copied contents of /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top_hw_platform_0/ps7_init.tcl into /fsbl/src/ps7_init.tcl.
+01:33:59 INFO  : Closing and re-opening the MSS file of ther project fsbl_bsp
+01:33:59 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+01:34:12 ERROR : Unexpected error while parsing XMD response ￿: com.google.gson.JsonSyntaxException: com.google.gson.stream.MalformedJsonException: invalid number or unquoted string near 
+01:35:24 INFO  : Processing command line option -hwspec /home/michael/ecen5139_final_project/hdl_ad7511_fork/projects/adv7511/zed/adv7511_zed.sdk/system_top.hdf.
+01:35:24 INFO  : Checking for hwspec changes in the project system_top_hw_platform_0.

@@ -1,7 +1,7 @@
 Copyright 1986-2014 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2014.2 (lin64) Build 932637 Wed Jun 11 13:08:52 MDT 2014
-| Date             : Sun Dec  6 01:02:17 2015
+| Date             : Sun Dec  6 01:30:27 2015
 | Host             : ubuntu-xilinx-2014 running 64-bit Ubuntu 14.04.3 LTS
 | Command          : report_power -file system_top_power_routed.rpt -pb system_top_power_summary_routed.pb
 | Design           : system_top
@@ -50,16 +50,16 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.033 |        8 |       --- |             --- |
-| Slice Logic              |     0.013 |    12812 |       --- |             --- |
-|   LUT as Logic           |     0.011 |     4581 |     53200 |            8.61 |
-|   Register               |    <0.001 |     5932 |    106400 |            5.57 |
-|   CARRY4                 |    <0.001 |      311 |     13300 |            2.33 |
+| Clocks                   |     0.032 |        8 |       --- |             --- |
+| Slice Logic              |     0.014 |    12984 |       --- |             --- |
+|   LUT as Logic           |     0.012 |     4653 |     53200 |            8.74 |
+|   Register               |    <0.001 |     5996 |    106400 |            5.63 |
+|   CARRY4                 |    <0.001 |      319 |     13300 |            2.39 |
 |   LUT as Distributed RAM |    <0.001 |       74 |     17400 |            0.42 |
 |   LUT as Shift Register  |    <0.001 |      153 |     17400 |            0.87 |
 |   F7/F8 Muxes            |    <0.001 |        8 |     53200 |            0.01 |
-|   Others                 |     0.000 |      675 |       --- |             --- |
-| Signals                  |     0.018 |     9763 |       --- |             --- |
+|   Others                 |     0.000 |      683 |       --- |             --- |
+| Signals                  |     0.018 |     9896 |       --- |             --- |
 | Block RAM                |     0.005 |        2 |       140 |            1.42 |
 | MMCM                     |     0.099 |        2 |         4 |           50.00 |
 | DSPs                     |     0.004 |        9 |       220 |            4.09 |
@@ -144,8 +144,8 @@ Table of Contents
 | mmcm_clk_0_s                         | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_clk_0_s             |             6.7 |
 | mmcm_fb_clk_s                        | i_system_wrapper/system_i/axi_hdmi_clkgen/inst/i_mmcm_drp/mmcm_fb_clk_s            |            55.0 |
 | clk_fpga_0                           | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[0]                      |            10.0 |
-| clk_fpga_1                           | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK1                                   |             5.0 |
 | clk_fpga_1                           | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK_unbuffered[1]                      |             5.0 |
+| clk_fpga_1                           | i_system_wrapper/system_i/sys_ps7/inst/FCLK_CLK1                                   |             5.0 |
 +--------------------------------------+------------------------------------------------------------------------------------+-----------------+
 
 
@@ -231,7 +231,7 @@ Table of Contents
 |         xbar                                                                     |     0.002 |
 |           inst                                                                   |     0.002 |
 |             gen_sasd.crossbar_sasd_0                                             |     0.002 |
-|               addr_arbiter_inst                                                  |     0.001 |
+|               addr_arbiter_inst                                                  |     0.002 |
 |               gen_decerr.decerr_slave_inst                                       |    <0.001 |
 |               splitter_ar                                                        |    <0.001 |
 |               splitter_aw                                                        |    <0.001 |
@@ -260,15 +260,15 @@ Table of Contents
 |             Dual.INPUT_DOUBLE_REGS5                                              |    <0.001 |
 |       axi_hdmi_clkgen                                                            |     0.103 |
 |         inst                                                                     |     0.103 |
-|           i_mmcm_drp                                                             |     0.101 |
+|           i_mmcm_drp                                                             |     0.100 |
 |           i_up_axi                                                               |     0.001 |
 |           i_up_clkgen                                                            |    <0.001 |
 |             i_drp_cntrl                                                          |    <0.001 |
 |             i_drp_rst_reg                                                        |    <0.001 |
 |             i_mmcm_rst_reg                                                       |    <0.001 |
-|       axi_hdmi_core                                                              |     0.031 |
-|         inst                                                                     |     0.031 |
-|           i_tx_core                                                              |     0.023 |
+|       axi_hdmi_core                                                              |     0.030 |
+|         inst                                                                     |     0.030 |
+|           i_tx_core                                                              |     0.022 |
 |             i_csc_RGB2CrYCb                                                      |     0.013 |
 |               i_csc_1_Cb                                                         |     0.005 |
 |                 i_add_c4                                                         |     0.003 |
@@ -296,10 +296,10 @@ Table of Contents
 |                   i_mult_macro                                                   |    <0.001 |
 |             i_mem                                                                |     0.005 |
 |             i_ss_444to422                                                        |     0.001 |
-|           i_up                                                                   |     0.006 |
+|           i_up                                                                   |     0.005 |
 |             i_hdmi_clock_mon                                                     |     0.001 |
 |             i_hdmi_rst_reg                                                       |    <0.001 |
-|             i_hdmi_xfer_cntrl                                                    |     0.003 |
+|             i_hdmi_xfer_cntrl                                                    |     0.002 |
 |             i_hdmi_xfer_status                                                   |    <0.001 |
 |             i_vdma_rst_reg                                                       |    <0.001 |
 |             i_vdma_xfer_status                                                   |    <0.001 |
@@ -318,7 +318,7 @@ Table of Contents
 |             VIDEO_REG_I                                                          |    <0.001 |
 |               GEN_REGISTER_DIRECT.GEN_REGDIRECT_DRES.VIDREGISTER_I               |    <0.001 |
 |           GEN_SPRT_FOR_MM2S.MM2S_FSYNC_I                                         |    <0.001 |
-|           GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I                                    |    <0.001 |
+|           GEN_SPRT_FOR_MM2S.MM2S_LINEBUFFER_I                                    |     0.001 |
 |             GEN_LINEBUF_FLUSH_SOF.GEN_LINEBUFFER.GEN_SYNC_FIFO.I_LINEBUFFER_FIFO |    <0.001 |
 |               fg_inst                                                            |    <0.001 |
 |                 inst_fifo_gen                                                    |    <0.001 |
@@ -563,7 +563,7 @@ Table of Contents
 |       runQueue_0                                                                 |     0.002 |
 |         inst                                                                     |     0.002 |
 |           runQueue_AXI4LiteS_if_U                                                |    <0.001 |
-|           runQueue_U                                                             |     0.001 |
+|           runQueue_U                                                             |     0.002 |
 |       sys_audio_clkgen                                                           |    <0.001 |
 |         inst                                                                     |    <0.001 |
 |       sys_concat_intc                                                            |     0.000 |
